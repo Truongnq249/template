@@ -21,6 +21,24 @@
 </head>
 
 <body>
+    <div class="search__mobile d-flex align-items-center">
+        <form action="" class="header__search d-flex flex-wrap align-items-center">
+            <input type="text" class="form-control" placeholder="Bạn cần tìm gì?" autocomplete="off">
+            <button type="submit" aria-label="Tìm kiếm">
+                <svg width="20" class="Icon Icon--search-desktop" viewBox="0 0 21 21">
+                    <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                        <path d="M18 18l-5.7096-5.7096"></path>
+                        <circle cx="7.2" cy="7.2" r="7.2"></circle>
+                    </g>
+                </svg>
+            </button>
+        </form>
+        <div class="search__mobile-close d-flex align-items-center justify-content-center">
+            <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+            </svg>
+        </div>
+    </div>
     <header class="header sticky-top">
         <div class="header__top">
             <div class="container">
@@ -35,14 +53,24 @@
                                     <img width="180" height="42" src="assets/images/logo.png">
                                 </a>
                             </div>
-                            <a href="javascript:void(0)" class="d-block d-lg-none header__cart-mb open-cart-qv position-relative" title="Giỏ hàng">
-                                <svg width="21px" height="21px" viewBox="0 0 19 23">
-                                    <path d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z" fill="#222"></path>
-                                </svg>
-                                <span class="d-flex align-items-center justify-content-center rounded-circle position-absolute">0</span>
-                            </a>
+                            <div class="header__action-mobile d-flex">
+                                <div class="icon__search-mb me-3">
+                                    <svg width="20" height="20" class="Icon Icon--search-desktop" viewBox="0 0 21 21">
+                                        <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                            <path d="M18 18l-5.7096-5.7096"></path>
+                                            <circle cx="7.2" cy="7.2" r="7.2"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <a href="javascript:void(0)" class="d-block d-lg-none header__cart-mb open-cart-qv position-relative" title="Giỏ hàng">
+                                    <svg width="21px" height="21px" viewBox="0 0 19 23">
+                                        <path d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z" fill="#222"></path>
+                                    </svg>
+                                    <span class="d-flex align-items-center justify-content-center rounded-circle position-absolute">0</span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-xl-7 col-lg-6 mt-3 mt-lg-0">
+                        <div class="col-xl-7 col-lg-6 mt-3 mt-lg-0 d-none d-lg-block">
                             <form action="" class="header__search d-flex flex-wrap align-items-center">
                                 <input type="text" class="form-control" placeholder="Bạn cần tìm gì?" autocomplete="off">
                                 <button type="submit" aria-label="Tìm kiếm">
@@ -186,7 +214,6 @@
             </div>
         </div>
     </header>
-
     <div class="menu-mobile">
         <div class="menu-mobile-inner">
             <div class="menu-mobile-account d-flex align-items-center position-relative">
