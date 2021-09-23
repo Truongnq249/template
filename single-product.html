@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/carousel/flickity.css">
+    <link rel="stylesheet" href="assets/box/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header sticky-top">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 d-flex align-items-center d-lg-block justify-content-between">
+                            <div class="header__bars d-block d-lg-none">
+                                <svg height="21px" viewBox="0 -53 384 384" width="21px" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path></svg>
+                            </div>
+                            <div class="header__logo">
+                                <a href="index.html">
+                                    <img width="180" height="42" src="assets/images/logo.png">
+                                </a>
+                            </div>
+                            <a href="javascript:void(0)" class="d-block d-lg-none header__cart-mb open-cart-qv position-relative" title="Giỏ hàng">
+                                <svg width="21px" height="21px" viewBox="0 0 19 23">
+                                    <path d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z" fill="#222"></path>
+                                </svg>
+                                <span class="d-flex align-items-center justify-content-center rounded-circle position-absolute">0</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-7 col-lg-6 mt-3 mt-lg-0">
+                            <form action="" class="header__search d-flex flex-wrap align-items-center">
+                                <input type="text" class="form-control" placeholder="Bạn cần tìm gì?" autocomplete="off">
+                                <button type="submit" aria-label="Tìm kiếm">
+                                    <svg class="Icon Icon--search-desktop" viewBox="0 0 21 21">
+                                        <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                            <path d="M18 18l-5.7096-5.7096"></path>
+                                            <circle cx="7.2" cy="7.2" r="7.2"></circle>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 d-none d-lg-flex justify-content-end">
+                            <div class="header__account-wrapper position-relative d-flex align-items-center">
+                                <a href="" class="header__account" aria-label="Tài khoản" title="Tài khoản">
+                                    <svg viewBox="0 0 512 512"><path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" data-original="#222222" class="active-path" fill="#222222"></path></svg>
+                                    <span class="acc-text">Tài khoản</span>
+                                </a>
+                                <ul class="header__account-sub position-absolute">
+                                    <li><a rel="nofollow" href="" title="Đăng nhập">Đăng nhập</a></li>
+                                    <li><a rel="nofollow" href="" title="Đăng ký">Đăng ký</a></li>
+                                    <li>
+                                        <a href="" aria-label="Sản phẩm Yêu thích" title="Sản phẩm Yêu thích">Yêu thích <span class="header__wishlish-count d-inline-block rounded-circle">0</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="javascript:void(0)" class="header__cart open-cart-qv d-inline-block position-relative" aria-label="Xem giỏ hàng" title="Giỏ hàng">
+                                <svg viewBox="0 0 512 512"><g><path xmlns="http://www.w3.org/2000/svg" d="m504.399 185.065c-6.761-8.482-16.904-13.348-27.83-13.348h-98.604l-53.469-122.433c-3.315-7.591-12.157-11.06-19.749-7.743-7.592 3.315-11.059 12.158-7.743 19.75l48.225 110.427h-178.458l48.225-110.427c3.315-7.592-.151-16.434-7.743-19.75-7.591-3.317-16.434.15-19.749 7.743l-53.469 122.434h-98.604c-10.926 0-21.069 4.865-27.83 13.348-6.637 8.328-9.086 19.034-6.719 29.376l52.657 230c3.677 16.06 17.884 27.276 34.549 27.276h335.824c16.665 0 30.872-11.216 34.549-27.276l52.657-230.001c2.367-10.342-.082-21.048-6.719-29.376zm-80.487 256.652h-335.824c-2.547 0-4.778-1.67-5.305-3.972l-52.657-229.998c-.413-1.805.28-3.163.936-3.984.608-.764 1.985-2.045 4.369-2.045h85.503l-3.929 8.997c-3.315 7.592.151 16.434 7.743 19.75 1.954.854 3.99 1.258 5.995 1.258 5.782 0 11.292-3.363 13.754-9l9.173-21.003h204.662l9.173 21.003c2.462 5.638 7.972 9 13.754 9 2.004 0 4.041-.404 5.995-1.258 7.592-3.315 11.059-12.158 7.743-19.75l-3.929-8.997h85.503c2.384 0 3.761 1.281 4.369 2.045.655.822 1.349 2.18.936 3.983l-52.657 230c-.528 2.301-2.76 3.971-5.307 3.971z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m166 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.715-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m256 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m346 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c-.001-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path></g></svg>
+                                <span class="acc-text">Giỏ hàng</span>
+                                <span class="header__cart-count position-absolute rounded-circle">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom d-none d-lg-block">
+            <div class="container">
+                <nav class="header__menu">
+                    <ul>
+                        <li class="current-menu-item">
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="">
+                            <a href="">Giới thiệu</a>
+                        </li>
+                        <li class="hazo-mega-menu menu-item-has-children">
+                            <a href="archive-product.html">Sản phẩm</a>
+                            <ul>
+                                <div class="container">
+                                    <div class="row">
+                                        <li class="col-2 px-3">
+                                            <a href="archive-product.html">
+                                                <img src="assets/images/mega-1-image-1.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="col-6 px-3">
+                                            <ul>
+                                                <li>
+                                                    <a href="archive-product.html">Áo</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Croptop</a></li>
+                                                        <li><a href="archive-product.html">Bẹt vai</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Đầm</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Chữ A</a></li>
+                                                        <li><a href="archive-product.html">Sơ Mi</a></li>
+                                                        <li><a href="archive-product.html">Đầm thun</a></li>
+                                                        <li><a href="archive-product.html">Xuông</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Váy</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Váy chữ A</a></li>
+                                                        <li><a href="archive-product.html">Bẹt vai</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Jumpsuit</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Quần dài</a></li>
+                                                        <li><a href="archive-product.html">Quần shorts</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Sale</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-4 px-3 hazo-mega-menu__right">
+                                            <ul>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-4.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-1.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-4.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">Tin tức</a>
+                            <ul>
+                                <li><a href="news-grid.html">Tin tức dạng lưới</a></li>
+                                <li><a href="news-list.html">Tin tức dạng danh sách</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="">Sale</a>
+                        </li>
+                        <li>
+                            <a href="">Hướng dẫn sử dụng</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-mobile">
+        <div class="menu-mobile-inner">
+            <div class="menu-mobile-account d-flex align-items-center position-relative">
+                <div class="menu-mobile-close position-absolute d-flex align-items-center justify-content-center">
+                    <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                        <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="menu-mobile-account__avatar d-flex align-items-center justify-content-center">
+                    <svg viewBox="0 0 512 512"><path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" data-original="#222222" class="active-path" fill="#222222"></path></svg>
+                </div>
+                <ul class="list-unstyled d-flex align-items-center mb-0 justify-content-evenly">
+                    <li>
+                        <a href="">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current-menu-item">
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li class="">
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="">Sản phẩm</a>
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="">Áo</a>
+                                <ul>
+                                    <li><a href="">Croptop</a></li>
+                                    <li><a href="">Bẹt vai</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Đầm</a>
+                                <ul>
+                                    <li><a href="">Chữ A</a></li>
+                                    <li><a href="">Sơ Mi</a></li>
+                                    <li><a href="">Đầm thun</a></li>
+                                    <li><a href="">Xuông</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Váy</a>
+                                <ul>
+                                    <li><a href="">Váy chữ A</a></li>
+                                    <li><a href="">Bẹt vai</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Jumpsuit</a>
+                                <ul>
+                                    <li><a href="">Quần dài</a></li>
+                                    <li><a href="">Quần shorts</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li class="menu-item-has-children">
+                            <li>
+                                <a href="">Sale</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="">Sale</a>
+                    </li>
+                    <li>
+                        <a href="">Hướng dẫn sử dụng</a>
+                    </li>
+                    <li>
+                        <a href="">Sản phẩm yêu thích (0)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="cart-quickview">
+        <div class="cart-quickview-inner">
+            <div class="cart-quickview__head d-flex justify-content-between">
+                <p>Giỏ hàng</p>
+                <span class="cart-quickview__close">
+                    <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                        <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="cart-quickview__body">
+                <!-- <div class="cart-quickview-empty d-flex flex-column align-items-center justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px"><g><g id="mobile-screen-shop-store-package"><rect x="23" y="56" width="4" height="2" rx="1" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M30,35H20a3,3,0,1,0,3,3,2.966,2.966,0,0,0-.184-1h4.368A2.966,2.966,0,0,0,27,38a3,3,0,1,0,3-3Zm-9,3a1,1,0,1,1-1-1A1,1,0,0,1,21,38Zm9,1a1,1,0,1,1,1-1A1,1,0,0,1,30,39Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M58.99,41.9A1,1,0,0,0,58,41H55V39a5,5,0,0,0-10,0v2H44V16.86A4,4,0,0,0,47,13a1,1,0,0,0-.11-.45L44,6.76V5a3.009,3.009,0,0,0-3-3H9A3.009,3.009,0,0,0,6,5V6.76L3.11,12.55A1,1,0,0,0,3,13a4,4,0,0,0,3,3.86V59a3.009,3.009,0,0,0,3,3H60a1,1,0,0,0,.74-.33.99.99,0,0,0,.25-.77ZM47,39a3,3,0,0,1,6,0v2H47ZM44.99,13.21A2,2,0,0,1,41,13V8h1.38ZM8,5A1,1,0,0,1,9,4H41a1,1,0,0,1,1,1V6H8ZM39,8v5a2,2,0,0,1-4,0V8ZM33,8v5a2,2,0,0,1-4,0V8ZM27,8v5a2,2,0,0,1-4,0V8ZM21,8v5a2,2,0,0,1-4,0V8ZM15,8v5a2,2,0,0,1-4,0V8ZM5.01,13.21,7.62,8H9v5a2,2,0,0,1-3.99.21ZM31,60H9a1,1,0,0,1-1-1V54H31Zm8.1,0H33V51h7.05Zm1.16-11H33V48h7.36Zm.31-3H32a1,1,0,0,0-1,1v5H8V16.86a4.054,4.054,0,0,0,2-1.24,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,4.054,4.054,0,0,0,2,1.24V41a1,1,0,0,0-.99.9Zm.54,14L42.9,43H45v3h2V43h6v3h2V43h2.1l1.79,17Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M33.75,24.34A.981.981,0,0,0,33,24H20V21a1,1,0,0,0-1-1H15v2h3V33a1,1,0,0,0,1,1H32a1,1,0,0,0,.99-.88l1-8A.968.968,0,0,0,33.75,24.34ZM31.12,32H20V26H31.87Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/></g></g> </svg>
+                    <a class="cart-quickview-empty__button" href="">Tiếp tục mua hàng</a>
+                </div> -->
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-quickview__footer">
+                <div class="cart-quickview__footer-price d-flex justify-content-between mb-4">
+                    <p>Tổng tiền</p>
+                    <span class="price">
+                        948.000₫
+                    </span>
+                </div>
+                <button type="submit">
+                    Thanh toán
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <main>
+        <section class="single-product__main">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="single-product__gallery">
+                            <div class="single-product__gallery-inner position-relative">
+                                <div class="carousel single-product__gallery-main" data-flickity='{ "cellAlign": "left", "contain": true,"imagesLoaded": true ,"prevNextButtons":false,"pageDots":false,"autoPlay": 4000}'>
+                                    <div class="carousel-cell w-100">
+                                        <a href="assets/images/prod-front-1.jpg" data-fancybox="single-product-gallery" class="gallery-main__image img-block d-block">
+                                            <img src="assets/images/prod-front-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-cell w-100">
+                                        <a href="assets/images/prod-back-1.jpg" data-fancybox="single-product-gallery" class="gallery-main__image img-block d-block">
+                                            <img src="assets/images/prod-back-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="assets/images/prod-front-1.jpg" data-fancybox="single-product-gallery" data-bs-toggle="tooltip" title="Zoom" class="single-product__zoom-button d-flex align-items-center justify-content-center rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                                        <g>
+                                            <g id="_x35_">
+                                                <g>
+                                                    <path d="M243.958,340.177L37.657,546.497L38.25,420.75c0-10.557-8.568-19.125-19.125-19.125S0,410.193,0,420.75v172.125     c0,5.661,2.333,10.232,6.043,13.368C9.505,609.781,14.325,612,19.68,612h171.57c10.557,0,19.125-8.567,19.125-19.125     c0-10.557-8.568-19.125-19.125-19.125H64.47l206.531-206.512L243.958,340.177z M605.956,5.757C602.495,2.219,597.676,0,592.34,0     H420.75c-10.557,0-19.125,8.568-19.125,19.125c0,10.557,8.568,19.125,19.125,19.125h126.761L340.999,244.781l27.042,27.042     l206.321-206.32L573.75,191.25c0,10.557,8.568,19.125,19.125,19.125S612,201.807,612,191.25V19.125     C612,13.464,609.667,8.894,605.956,5.757z"/>
+                                                </g> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                                        </svg>
+                                </a>
+                            </div>
+
+                            <div class="carousel single-product__gallery-nav" data-flickity='{ "asNavFor": ".single-product__gallery-main","imagesLoaded": true,"cellAlign":"left" ,"contain": true, "pageDots": false }'>
+                                <div class="carousel-cell col-3">
+                                    <div class="gallery-nav__image img-block d-block img-block">
+                                        <img src="assets/images/prod-front-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-cell col-3">
+                                    <div class="gallery-nav__image img-block d-block img-block">
+                                        <img src="assets/images/prod-back-1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
+                            <p>
+                                <a href="index.php">Trang chủ</a>
+                                <span class="separator"> / </span>
+                                <span class="last">Chi tiết sản phẩm</span>
+                            </p>
+                        </nav>
+                        <h1 class="product-title-has-line single-product__title mt-4">Tên sản phẩm</h1>
+                        <span class="price">
+                            <del>
+                                <span>1.000.000đ</span>
+                        </del>
+                        <ins>
+                                <span>500.000đ</span>
+                            </ins>
+                        </span>
+                        <div class="single-product__desc ws-sgct mt-4">
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+                                ultricies mi vitae est. Mauris placerat eleifend leo.
+                            </p>
+                        </div>
+                        <form action="">
+                            <div class="single-product__add2cart mt-4 d-flex product-quantity">
+                                <div class="quantity d-flex flex-wrap">
+                                    <button type="button" class="minus">-</button>
+                                    <div class="qty">
+                                        <input type="number" id="" value="1" min="1" max="100000">
+                                    </div>
+                                    <button type="button" class="plus">+</button>
+                                </div>
+                                <button type="submit" class="button button-primary">Thêm vào giỏ hàng</button>
+                            </div>
+                        </form>
+                        <div class="single-product__category d-flex flex-wrap align-items-center mt-5 pt-3">
+                            <span>Danh mục sản phẩm:</span>
+                            <ul>
+                                <li>
+                                    <a href="">Danh mục sản phẩm 1</a>
+                                </li>
+                                <li>
+                                    <a href="">Danh mục sản phẩm 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="single-product__social-share d-flex mt-4 mb-0 ps-0 list-unstyled">
+                            <li class="me-3">
+                                <a href="" class="d-flex align-items-center justify-content-center rounded-circle facebook" data-bs-toggle="tooltip" title="Chia sẻ qua Facebook">
+                                    <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.0826 14.625L13.8085 9.91961H9.26935V6.86613C9.26935 5.57883 9.90344 4.32402 11.9364 4.32402H14V0.317891C14 0.317891 12.1273 0 10.3369 0C6.59872 0 4.15528 2.25367 4.15528 6.33344V9.91961H0V14.625H4.15528V26H9.26935V14.625H13.0826Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a href="" class="d-flex align-items-center justify-content-center rounded-circle twitter" data-bs-toggle="tooltip" title="Chia sẻ qua Twitter">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 2.41887C17.3306 2.7125 16.6174 2.90712 15.8737 3.00162C16.6388 2.54487 17.2226 1.82712 17.4971 0.962C16.7839 1.38725 15.9964 1.68763 15.1571 1.85525C14.4799 1.13413 13.5146 0.6875 12.4616 0.6875C10.4186 0.6875 8.77387 2.34575 8.77387 4.37863C8.77387 4.67113 8.79862 4.95237 8.85938 5.22012C5.7915 5.0705 3.07687 3.60013 1.25325 1.36025C0.934875 1.91263 0.748125 2.54488 0.748125 3.2255C0.748125 4.5035 1.40625 5.63637 2.38725 6.29225C1.79437 6.281 1.21275 6.10888 0.72 5.83775C0.72 5.849 0.72 5.86363 0.72 5.87825C0.72 7.6715 1.99912 9.161 3.6765 9.50412C3.37612 9.58625 3.04875 9.62562 2.709 9.62562C2.47275 9.62562 2.23425 9.61213 2.01038 9.56262C2.4885 11.024 3.84525 12.0984 5.4585 12.1332C4.203 13.1154 2.60888 13.7071 0.883125 13.7071C0.5805 13.7071 0.29025 13.6936 0 13.6565C1.63462 14.7106 3.57188 15.3125 5.661 15.3125C12.4515 15.3125 16.164 9.6875 16.164 4.81175C16.164 4.64862 16.1584 4.49113 16.1505 4.33475C16.8829 3.815 17.4982 3.16587 18 2.41887Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a href="" class="d-flex align-items-center justify-content-center rounded-circle email" data-bs-toggle="tooltip" title="Chia sẻ qua Email">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 1.5L8.58579 8.58579C9.36683 9.36683 10.6332 9.36684 11.4142 8.58579L18.5 1.5M2 15H18C18.5523 15 19 14.5523 19 14V2C19 1.44772 18.5523 1 18 1H2C1.44772 1 1 1.44772 1 2V14C1 14.5523 1.44772 15 2 15Z" stroke="#001A72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a href="" class="d-flex align-items-center justify-content-center rounded-circle pinterest" data-bs-toggle="tooltip" title="Chia sẻ qua Pinterest">
+                                    <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M27 14C27 21.4922 20.9577 27.5625 13.5 27.5625C12.1065 27.5625 10.7673 27.3492 9.50444 26.9555C10.0542 26.0531 10.8762 24.5766 11.181 23.4008C11.3444 22.7664 12.0194 20.1742 12.0194 20.1742C12.4603 21.0164 13.745 21.7328 15.1113 21.7328C19.1831 21.7328 22.1171 17.9703 22.1171 13.2945C22.1171 8.81563 18.4754 5.46328 13.794 5.46328C7.96935 5.46328 4.87198 9.38984 4.87198 13.6719C4.87198 15.6625 5.92802 18.1398 7.61008 18.9273C7.86593 19.0477 8.00202 18.993 8.0619 18.7469C8.10544 18.5609 8.33407 17.6367 8.4375 17.2102C8.47016 17.0734 8.45383 16.9531 8.34496 16.8219C7.79516 16.1383 7.34879 14.8914 7.34879 13.7266C7.34879 10.7352 9.60242 7.84219 13.4456 7.84219C16.7607 7.84219 19.0851 10.1117 19.0851 13.3602C19.0851 17.0297 17.2397 19.5727 14.8391 19.5727C13.5163 19.5727 12.5202 18.4734 12.8413 17.1227C13.2224 15.5094 13.9573 13.7703 13.9573 12.6055C13.9573 11.5664 13.402 10.6969 12.248 10.6969C10.8925 10.6969 9.80383 12.1023 9.80383 13.9891C9.80383 15.1922 10.2067 16.0016 10.2067 16.0016C10.2067 16.0016 8.87298 21.6781 8.62802 22.7391C8.35585 23.9094 8.46472 25.5609 8.57903 26.6328C3.56008 24.6586 0 19.7477 0 14C0 6.50781 6.04234 0.4375 13.5 0.4375C20.9577 0.4375 27 6.50781 27 14Z" fill="black"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a href="" class="d-flex align-items-center justify-content-center rounded-circle linkedin" data-bs-toggle="tooltip" title="Chia sẻ qua LinkedIn">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26 0H1.99375C0.89375 0 0 0.90625 0 2.01875V25.9813C0 27.0938 0.89375 28 1.99375 28H26C27.1 28 28 27.0938 28 25.9813V2.01875C28 0.90625 27.1 0 26 0ZM8.4625 24H4.3125V10.6375H8.46875V24H8.4625ZM6.3875 8.8125C5.05625 8.8125 3.98125 7.73125 3.98125 6.40625C3.98125 5.08125 5.05625 4 6.3875 4C7.7125 4 8.79375 5.08125 8.79375 6.40625C8.79375 7.7375 7.71875 8.8125 6.3875 8.8125V8.8125ZM24.0187 24H19.8687V17.5C19.8687 15.95 19.8375 13.9563 17.7125 13.9563C15.55 13.9563 15.2188 15.6438 15.2188 17.3875V24H11.0688V10.6375H15.05V12.4625H15.1062C15.6625 11.4125 17.0188 10.3062 19.0375 10.3062C23.2375 10.3062 24.0187 13.075 24.0187 16.675V24V24Z" fill="black"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <ul class="single-product__nav pl-0 list-unstyled d-flex justify-content-center position-relative">
+                            <li class="rounded-circle">
+                                <a href="" class="d-flex align-items-center justify-content-center h-100 w-100">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 1L1 9L9 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <img src="assets/images/prod-1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="rounded-circle">
+                                <a href="" class="d-flex align-items-center justify-content-center h-100 w-100">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 17L9 9L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <img src="assets/images/prod-2.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="single-product__suggest">
+                            <p class="product-title-has-line my-4">Có thể bạn sẽ thích...</p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-2.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="single-product__info">
+            <div class="container">
+                <ul class="nav nav-pills mb-3" id="single-product-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="product-info-tab" data-bs-toggle="pill" data-bs-target="#product-info" type="button" role="tab" aria-controls="product-info" aria-selected="true">Mô tả</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="product-comment-tab" data-bs-toggle="pill" data-bs-target="#product-comment" type="button" role="tab" aria-controls="product-comment" aria-selected="false">Đánh giá sản phẩm</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="single-product-tabContent">
+                    <div class="tab-pane fade single-product__content ws-sgct show active" id="product-info" role="tabpanel" aria-labelledby="product-info-tab">
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+                            placerat eleifend leo.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="product-comment" role="tabpanel" aria-labelledby="product-comment-tab">...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products mb-4">
+            <div class="container">
+                <p class="related-products__title pt-4 pt-lg-5 mb-4 pb-2 text-uppercase">Sản phẩm liên quan</p>
+                <div class="related-products__carousel mx--15" data-flickity='{ "cellAlign": "left", "contain": true,"imagesLoaded": true,"pageDots":false,"autoPlay": 4000}'>
+                    <div class="col-6 col-md-4 col-lg-3 px-4">
+                        <div class="product__item">
+                            <div class="product__item-thumb">
+                                <a href="single-product.html" class="product__item-image d-block">
+                                    <img src="assets/images/hd-front.jpg" alt="">
+                                    <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                </a>
+                                <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                    Xem nhanh
+                                </div>
+                            </div>
+                            <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                            <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                            <span class="price">
+                                <del>
+                                    <span> 1.500.000đ </span>
+                            </del>
+                            <ins>
+                                    <span>1.000.000đ</span>
+                                </ins>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 px-4">
+                        <div class="product__item">
+                            <div class="product__item-thumb">
+                                <a href="single-product.html" class="product__item-image d-block">
+                                    <img src="assets/images/hd-front.jpg" alt="">
+                                    <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                </a>
+                                <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                    Xem nhanh
+                                </div>
+                            </div>
+                            <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                            <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                            <span class="price">
+                                <del>
+                                    <span> 1.500.000đ </span>
+                            </del>
+                            <ins>
+                                    <span>1.000.000đ</span>
+                                </ins>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 px-4">
+                        <div class="product__item">
+                            <div class="product__item-thumb">
+                                <a href="single-product.html" class="product__item-image d-block">
+                                    <img src="assets/images/hd-front.jpg" alt="">
+                                    <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                </a>
+                                <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                    Xem nhanh
+                                </div>
+                            </div>
+                            <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                            <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                            <span class="price">
+                                <del>
+                                    <span> 1.500.000đ </span>
+                            </del>
+                            <ins>
+                                    <span>1.000.000đ</span>
+                                </ins>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 px-4">
+                        <div class="product__item">
+                            <div class="product__item-thumb">
+                                <a href="single-product.html" class="product__item-image d-block">
+                                    <img src="assets/images/hd-front.jpg" alt="">
+                                    <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                </a>
+                                <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                    Xem nhanh
+                                </div>
+                            </div>
+                            <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                            <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                            <span class="price">
+                                <del>
+                                    <span> 1.500.000đ </span>
+                            </del>
+                            <ins>
+                                    <span>1.000.000đ</span>
+                                </ins>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 px-4">
+                        <div class="product__item">
+                            <div class="product__item-thumb">
+                                <a href="single-product.html" class="product__item-image d-block">
+                                    <img src="assets/images/hd-front.jpg" alt="">
+                                    <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                </a>
+                                <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                    Xem nhanh
+                                </div>
+                            </div>
+                            <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                            <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                            <span class="price">
+                                <del>
+                                    <span> 1.500.000đ </span>
+                            </del>
+                            <ins>
+                                    <span>1.000.000đ</span>
+                                </ins>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="archive-product__bottom mt-5 pt-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="archive-product__bottom-item">
+                            <p class="product-title-has-line"> Sản phẩm mới nhất </p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-1.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <ins>
+                                                <span>800.000đ</span>
+                                    </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-2.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-3.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-4.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="archive-product__bottom-item">
+                            <p class="product-title-has-line"> Bán chạy mới nhất </p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-5.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-6.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-7.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-8.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="archive-product__bottom-item">
+                            <p class="product-title-has-line"> Sản phẩm nổi bật </p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-9.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <ins>
+                                                <span>800.000đ</span>
+                                    </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-10.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-11.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-1.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="archive-product__bottom-item">
+                            <p class="product-title-has-line">Được đánh giá cao nhất</p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-2.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-3.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-4.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="#" class="item__image">
+                                    <img src="assets/images/prod-5.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade product-quickview-modal" id="product-quickview-modal" tabindex="-1" aria-labelledby="product-quickview-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-6">
+                            <div class="quickview__gallery" data-flickity='{ "cellAlign": "left", "contain": true,"imagesLoaded": true,"autoPlay": 2500}'>
+                                <div class="carousel-cell w-100">
+                                    <img src="assets/images/hd-front.jpg" alt="">
+                                </div>
+                                <div class="carousel-cell w-100">
+                                    <img src="assets/images/hd-back.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="quickview__content">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <p class="quickview__content-name">
+                                    <a href="">Tên sản phẩm</a>
+                                </p>
+                                <span class="price">
+                                    <del>
+                                        <span>1.500.000đ</span>
+                                </del>
+                                <ins>
+                                        <span>1.000.000đ</span>
+                                    </ins>
+                                </span>
+                                <div class="quickview__content-desc">
+                                    <p>
+                                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+                                        placerat eleifend leo.
+                                    </p>
+                                </div>
+                                <div class="quickview__content-action">
+                                    <form action="">
+                                        <div class="quantity d-flex flex-wrap">
+                                            <button type="button" class="minus">-</button>
+                                            <div class="qty">
+                                                <input type="number" id="" value="1" min="1" max="100000">
+                                            </div>
+                                            <button type="button" class="plus">+</button>
+                                        </div>
+                                        <button class="action-submit" type="submit">Thêm vào giỏ hàng</button>
+                                    </form>
+                                </div>
+                                <div class="quickview__content-category d-flex align-items-center">
+                                    Danh mục sản phẩm:
+                                    <ul>
+                                        <li><a href="">Danh mục 1</a></li>
+                                        <li><a href="">Danh mục 2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="assets/box/jquery.fancybox.min.js"></script>
+    <script src="assets/carousel/flickity.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

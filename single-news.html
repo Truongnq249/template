@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/carousel/flickity.css">
+    <link rel="stylesheet" href="assets/box/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header sticky-top">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 d-flex align-items-center d-lg-block justify-content-between">
+                            <div class="header__bars d-block d-lg-none">
+                                <svg height="21px" viewBox="0 -53 384 384" width="21px" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path></svg>
+                            </div>
+                            <div class="header__logo">
+                                <a href="index.html">
+                                    <img width="180" height="42" src="assets/images/logo.png">
+                                </a>
+                            </div>
+                            <a href="javascript:void(0)" class="d-block d-lg-none header__cart-mb open-cart-qv position-relative" title="Giỏ hàng">
+                                <svg width="21px" height="21px" viewBox="0 0 19 23">
+                                    <path d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z" fill="#222"></path>
+                                </svg>
+                                <span class="d-flex align-items-center justify-content-center rounded-circle position-absolute">0</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-7 col-lg-6 mt-3 mt-lg-0">
+                            <form action="" class="header__search d-flex flex-wrap align-items-center">
+                                <input type="text" class="form-control" placeholder="Bạn cần tìm gì?" autocomplete="off">
+                                <button type="submit" aria-label="Tìm kiếm">
+                                    <svg class="Icon Icon--search-desktop" viewBox="0 0 21 21">
+                                        <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                            <path d="M18 18l-5.7096-5.7096"></path>
+                                            <circle cx="7.2" cy="7.2" r="7.2"></circle>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 d-none d-lg-flex justify-content-end">
+                            <div class="header__account-wrapper position-relative d-flex align-items-center">
+                                <a href="" class="header__account" aria-label="Tài khoản" title="Tài khoản">
+                                    <svg viewBox="0 0 512 512"><path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" data-original="#222222" class="active-path" fill="#222222"></path></svg>
+                                    <span class="acc-text">Tài khoản</span>
+                                </a>
+                                <ul class="header__account-sub position-absolute">
+                                    <li><a rel="nofollow" href="" title="Đăng nhập">Đăng nhập</a></li>
+                                    <li><a rel="nofollow" href="" title="Đăng ký">Đăng ký</a></li>
+                                    <li>
+                                        <a href="" aria-label="Sản phẩm Yêu thích" title="Sản phẩm Yêu thích">Yêu thích <span class="header__wishlish-count d-inline-block rounded-circle">0</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="javascript:void(0)" class="header__cart open-cart-qv d-inline-block position-relative" aria-label="Xem giỏ hàng" title="Giỏ hàng">
+                                <svg viewBox="0 0 512 512"><g><path xmlns="http://www.w3.org/2000/svg" d="m504.399 185.065c-6.761-8.482-16.904-13.348-27.83-13.348h-98.604l-53.469-122.433c-3.315-7.591-12.157-11.06-19.749-7.743-7.592 3.315-11.059 12.158-7.743 19.75l48.225 110.427h-178.458l48.225-110.427c3.315-7.592-.151-16.434-7.743-19.75-7.591-3.317-16.434.15-19.749 7.743l-53.469 122.434h-98.604c-10.926 0-21.069 4.865-27.83 13.348-6.637 8.328-9.086 19.034-6.719 29.376l52.657 230c3.677 16.06 17.884 27.276 34.549 27.276h335.824c16.665 0 30.872-11.216 34.549-27.276l52.657-230.001c2.367-10.342-.082-21.048-6.719-29.376zm-80.487 256.652h-335.824c-2.547 0-4.778-1.67-5.305-3.972l-52.657-229.998c-.413-1.805.28-3.163.936-3.984.608-.764 1.985-2.045 4.369-2.045h85.503l-3.929 8.997c-3.315 7.592.151 16.434 7.743 19.75 1.954.854 3.99 1.258 5.995 1.258 5.782 0 11.292-3.363 13.754-9l9.173-21.003h204.662l9.173 21.003c2.462 5.638 7.972 9 13.754 9 2.004 0 4.041-.404 5.995-1.258 7.592-3.315 11.059-12.158 7.743-19.75l-3.929-8.997h85.503c2.384 0 3.761 1.281 4.369 2.045.655.822 1.349 2.18.936 3.983l-52.657 230c-.528 2.301-2.76 3.971-5.307 3.971z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m166 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.715-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m256 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m346 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c-.001-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path></g></svg>
+                                <span class="acc-text">Giỏ hàng</span>
+                                <span class="header__cart-count position-absolute rounded-circle">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom d-none d-lg-block">
+            <div class="container">
+                <nav class="header__menu">
+                    <ul>
+                        <li class="current-menu-item">
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="">
+                            <a href="">Giới thiệu</a>
+                        </li>
+                        <li class="hazo-mega-menu menu-item-has-children">
+                            <a href="archive-product.html">Sản phẩm</a>
+                            <ul>
+                                <div class="container">
+                                    <div class="row">
+                                        <li class="col-2 px-3">
+                                            <a href="archive-product.html">
+                                                <img src="assets/images/mega-1-image-1.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="col-6 px-3">
+                                            <ul>
+                                                <li>
+                                                    <a href="archive-product.html">Áo</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Croptop</a></li>
+                                                        <li><a href="archive-product.html">Bẹt vai</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Đầm</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Chữ A</a></li>
+                                                        <li><a href="archive-product.html">Sơ Mi</a></li>
+                                                        <li><a href="archive-product.html">Đầm thun</a></li>
+                                                        <li><a href="archive-product.html">Xuông</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Váy</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Váy chữ A</a></li>
+                                                        <li><a href="archive-product.html">Bẹt vai</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Jumpsuit</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Quần dài</a></li>
+                                                        <li><a href="archive-product.html">Quần shorts</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Sale</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-4 px-3 hazo-mega-menu__right">
+                                            <ul>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-4.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-1.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-4.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">Tin tức</a>
+                            <ul>
+                                <li><a href="news-grid.html">Tin tức dạng lưới</a></li>
+                                <li><a href="news-list.html">Tin tức dạng danh sách</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="">Sale</a>
+                        </li>
+                        <li>
+                            <a href="">Hướng dẫn sử dụng</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-mobile">
+        <div class="menu-mobile-inner">
+            <div class="menu-mobile-account d-flex align-items-center position-relative">
+                <div class="menu-mobile-close position-absolute d-flex align-items-center justify-content-center">
+                    <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                        <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="menu-mobile-account__avatar d-flex align-items-center justify-content-center">
+                    <svg viewBox="0 0 512 512"><path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" data-original="#222222" class="active-path" fill="#222222"></path></svg>
+                </div>
+                <ul class="list-unstyled d-flex align-items-center mb-0 justify-content-evenly">
+                    <li>
+                        <a href="">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current-menu-item">
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li class="">
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="">Sản phẩm</a>
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="">Áo</a>
+                                <ul>
+                                    <li><a href="">Croptop</a></li>
+                                    <li><a href="">Bẹt vai</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Đầm</a>
+                                <ul>
+                                    <li><a href="">Chữ A</a></li>
+                                    <li><a href="">Sơ Mi</a></li>
+                                    <li><a href="">Đầm thun</a></li>
+                                    <li><a href="">Xuông</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Váy</a>
+                                <ul>
+                                    <li><a href="">Váy chữ A</a></li>
+                                    <li><a href="">Bẹt vai</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Jumpsuit</a>
+                                <ul>
+                                    <li><a href="">Quần dài</a></li>
+                                    <li><a href="">Quần shorts</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li class="menu-item-has-children">
+                            <li>
+                                <a href="">Sale</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="">Sale</a>
+                    </li>
+                    <li>
+                        <a href="">Hướng dẫn sử dụng</a>
+                    </li>
+                    <li>
+                        <a href="">Sản phẩm yêu thích (0)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="cart-quickview">
+        <div class="cart-quickview-inner">
+            <div class="cart-quickview__head d-flex justify-content-between">
+                <p>Giỏ hàng</p>
+                <span class="cart-quickview__close">
+                    <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                        <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="cart-quickview__body">
+                <!-- <div class="cart-quickview-empty d-flex flex-column align-items-center justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px"><g><g id="mobile-screen-shop-store-package"><rect x="23" y="56" width="4" height="2" rx="1" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M30,35H20a3,3,0,1,0,3,3,2.966,2.966,0,0,0-.184-1h4.368A2.966,2.966,0,0,0,27,38a3,3,0,1,0,3-3Zm-9,3a1,1,0,1,1-1-1A1,1,0,0,1,21,38Zm9,1a1,1,0,1,1,1-1A1,1,0,0,1,30,39Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M58.99,41.9A1,1,0,0,0,58,41H55V39a5,5,0,0,0-10,0v2H44V16.86A4,4,0,0,0,47,13a1,1,0,0,0-.11-.45L44,6.76V5a3.009,3.009,0,0,0-3-3H9A3.009,3.009,0,0,0,6,5V6.76L3.11,12.55A1,1,0,0,0,3,13a4,4,0,0,0,3,3.86V59a3.009,3.009,0,0,0,3,3H60a1,1,0,0,0,.74-.33.99.99,0,0,0,.25-.77ZM47,39a3,3,0,0,1,6,0v2H47ZM44.99,13.21A2,2,0,0,1,41,13V8h1.38ZM8,5A1,1,0,0,1,9,4H41a1,1,0,0,1,1,1V6H8ZM39,8v5a2,2,0,0,1-4,0V8ZM33,8v5a2,2,0,0,1-4,0V8ZM27,8v5a2,2,0,0,1-4,0V8ZM21,8v5a2,2,0,0,1-4,0V8ZM15,8v5a2,2,0,0,1-4,0V8ZM5.01,13.21,7.62,8H9v5a2,2,0,0,1-3.99.21ZM31,60H9a1,1,0,0,1-1-1V54H31Zm8.1,0H33V51h7.05Zm1.16-11H33V48h7.36Zm.31-3H32a1,1,0,0,0-1,1v5H8V16.86a4.054,4.054,0,0,0,2-1.24,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,4.054,4.054,0,0,0,2,1.24V41a1,1,0,0,0-.99.9Zm.54,14L42.9,43H45v3h2V43h6v3h2V43h2.1l1.79,17Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M33.75,24.34A.981.981,0,0,0,33,24H20V21a1,1,0,0,0-1-1H15v2h3V33a1,1,0,0,0,1,1H32a1,1,0,0,0,.99-.88l1-8A.968.968,0,0,0,33.75,24.34ZM31.12,32H20V26H31.87Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/></g></g> </svg>
+                    <a class="cart-quickview-empty__button" href="">Tiếp tục mua hàng</a>
+                </div> -->
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-quickview__footer">
+                <div class="cart-quickview__footer-price d-flex justify-content-between mb-4">
+                    <p>Tổng tiền</p>
+                    <span class="price">
+                        948.000₫
+                    </span>
+                </div>
+                <button type="submit">
+                    Thanh toán
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+
+    <main>
+        <section class="page-banner position-relative">
+            <div class="page-banner__image">
+                <picture>
+                    <source media="(max-width:1023px)" srcset="https://source.unsplash.com/random">
+                    <img src="https://source.unsplash.com/random" alt="">
+                </picture>
+            </div>
+            <p class="page-banner__title text-uppercase text-white  position-relative fw-bold">Tin tức</p>
+        </section>
+
+        <div class="news-detail">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-8 col-lg-9">
+                        <nav class="news__head-list">
+                            <div class="news__head-mobile d-block d-lg-none position-relative">
+                                <p>Chuyên mục tin tức</p>
+                            </div>
+                            <div class="list-inner">
+                                <ul class="mb-0">
+                                    <li class="current-menu-item active"><a href="">Tất cả</a></li>
+                                    <li><a href="">Chuyên mục tin tức 2</a></li>
+                                    <li><a href="">Chuyên mục tin tức 3</a></li>
+                                    <li><a href="">Chuyên mục tin tức 4</a></li>
+                                    <li><a href="">Chuyên mục tin tức 5</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <h1 class="news-detail__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, cupiditate?</h1>
+                        <div class="news-detail__action d-flex align-items-center row-gap-15 flex-wrap">
+                            <div class="action-like">
+                                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=90&layout=button_count&action=like&size=small&share=false&height=21&appId" width="140" height="21" style="border:none;overflow:hidden"
+                                    scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                            <div class="action-share d-flex align-items-center">
+                                <p>Chia sẻ bài viết này:</p>
+                                <ul class="d-flex list-unstyled	">
+                                    <li>
+                                        <a href="">
+                                            <svg height="16px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg height="16px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg height="16px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg height="16px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="time">27.03.2021</p>
+                        </div>
+                        <div class="news-detail__content ws-sgct">
+                            <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, perferendis porro amet reiciendis quis dolores expedita sint delectus quasi cupiditate!</strong></p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aut quas quae unde maiores, sequi soluta saepe rerum!
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aut quas quae unde maiores, sequi soluta saepe rerum!
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fugit amet rerum quod provident natus maxime, perspiciatis optio harum blanditiis sequi veritatis quis? Excepturi atque tempore quas architecto temporibus eligendi?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, culpa nemo molestiae aut adipisci beatae exercitationem temporibus necessitatibus perspiciatis incidunt, corporis vero, nulla iure doloremque doloribus sint libero
+                                nam id? Esse cumque molestiae nisi perferendis porro est quidem facilis minus, odio molestias, alias soluta voluptatibus magni iste quod? Ducimus, labore!</p>
+                            <img src="https://storage.googleapis.com/vinhomes-data-01/hinh-anh-sapphire-3-vinhomes-smart-city-tra-truoc-20%-nhan-ngay-nha-toi-cac-dai-tien-ich-01.JPG" alt="">
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quia sed consequatur reiciendis alias eligendi maiores, vitae similique dicta doloribus!</p>
+                        </div>
+                        <div class="news-detail__action d-flex align-items-center row-gap-15 flex-wrap">
+                            <div class="action-like">
+                                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=90&layout=button_count&action=like&size=small&share=false&height=21&appId" width="140" height="21" style="border:none;overflow:hidden"
+                                    scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                            <div class="action-share d-flex align-items-center">
+                                <p>Chia sẻ bài viết này:</p>
+                                <ul class="d-flex list-unstyled	">
+                                    <li>
+                                        <a href="">
+                                            <svg height="16px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg height="16px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg height="16px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg height="16px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <aside class="sidebar">
+                            <div class="sidebar__block">
+                                <p class="sidebar__block-head text-uppercase fw-bold">Tin tức phổ biến </p>
+                                <div class="sidebar__list">
+                                    <div class="sidebar__item d-flex flex-wrap align-items-start">
+                                        <a href="single-news.html" class="sidebar__item-image">
+                                            <img src="assets/images/news-1.jpg" alt="">
+                                        </a>
+                                        <div class="sidebar__item-right">
+                                            <a href="single-news.html" class="right-title fw-bold">Tiêu đề tin tức tiêu đề tin tức</a>
+                                            <p class="right-info">
+                                                <span>27.03.2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__item d-flex flex-wrap align-items-start">
+                                        <a href="single-news.html" class="sidebar__item-image">
+                                            <img src="assets/images/news-1.webp" alt="">
+                                        </a>
+                                        <div class="sidebar__item-right">
+                                            <a href="single-news.html" class="right-title fw-bold">Tiêu đề tin tức tiêu đề tin tức</a>
+                                            <p class="right-info">
+                                                <span>27.03.2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__item d-flex flex-wrap align-items-start">
+                                        <a href="single-news.html" class="sidebar__item-image">
+                                            <img src="assets/images/news-2.jpg" alt="">
+                                        </a>
+                                        <div class="sidebar__item-right">
+                                            <a href="single-news.html" class="right-title fw-bold">Tiêu đề tin tức tiêu đề tin tức</a>
+                                            <p class="right-info">
+                                                <span>27.03.2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__item d-flex flex-wrap align-items-start">
+                                        <a href="single-news.html" class="sidebar__item-image">
+                                            <img src="assets/images/news-3.webp" alt="">
+                                        </a>
+                                        <div class="sidebar__item-right">
+                                            <a href="single-news.html" class="right-title fw-bold">Tiêu đề tin tức tiêu đề tin tức</a>
+                                            <p class="right-info">
+                                                <span>27.03.2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__item d-flex flex-wrap align-items-start">
+                                        <a href="single-news.html" class="sidebar__item-image">
+                                            <img src="assets/images/news-4.webp" alt="">
+                                        </a>
+                                        <div class="sidebar__item-right">
+                                            <a href="single-news.html" class="right-title fw-bold">Tiêu đề tin tức tiêu đề tin tức</a>
+                                            <p class="right-info">
+                                                <span>27.03.2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-12">
+                        <div class="related-news">
+                            <p class="related-news__head text-uppercase fw-bold">
+                                Tin khác</p>
+                            <div class="related-news__carousel mx--15 custom-flk-button custom-flk-button-center" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false,"imagesLoaded":true,"autoPlay": 2500}'>
+                                <div class="col-12 col-md-6 col-lg-4 my-4 px-4">
+                                    <div class="news__item">
+                                        <a href="single-news.html" class="news__item-image d-block">
+                                            <img src="assets/images/news-2.jpg" alt="">
+                                        </a>
+                                        <div class="news__item-content">
+                                            <div class="news__item-info d-flex justify-content-between">
+                                                <p class="text-uppercase">Admin</p>
+                                                <p class="info__time">25.02.2021</p>
+                                            </div>
+                                            <a href="single-news.html" class="news__item-title fw-bold">
+                                            Tiêu đề tin tức tiêu đề tin tức
+                                            </a>
+                                            <p class="news__item-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque nihil iste doloribus exercitationem facere quos enim, quod nam impedit.
+                                            </p>
+                                            <a href="single-news.html" class="news__item-link font-italic">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 my-4 px-4">
+                                    <div class="news__item">
+                                        <a href="single-news.html" class="news__item-image d-block">
+                                            <img src="assets/images/news-3.webp" alt="">
+                                        </a>
+                                        <div class="news__item-content">
+                                            <div class="news__item-info d-flex justify-content-between">
+                                                <p class="text-uppercase">Admin</p>
+                                                <p class="info__time">25.02.2021</p>
+                                            </div>
+                                            <a href="single-news.html" class="news__item-title fw-bold">
+                                            Tiêu đề tin tức tiêu đề tin tức
+                                            </a>
+                                            <p class="news__item-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque nihil iste doloribus exercitationem facere quos enim, quod nam impedit.
+                                            </p>
+                                            <a href="single-news.html" class="news__item-link font-italic">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 my-4 px-4">
+                                    <div class="news__item">
+                                        <a href="single-news.html" class="news__item-image d-block">
+                                            <img src="assets/images/news-4.webp" alt="">
+                                        </a>
+                                        <div class="news__item-content">
+                                            <div class="news__item-info d-flex justify-content-between">
+                                                <p class="text-uppercase">Admin</p>
+                                                <p class="info__time">25.02.2021</p>
+                                            </div>
+                                            <a href="single-news.html" class="news__item-title fw-bold">
+                                            Tiêu đề tin tức tiêu đề tin tức
+                                            </a>
+                                            <p class="news__item-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque nihil iste doloribus exercitationem facere quos enim, quod nam impedit.
+                                            </p>
+                                            <a href="single-news.html" class="news__item-link font-italic">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 my-4 px-4">
+                                    <div class="news__item">
+                                        <a href="single-news.html" class="news__item-image d-block">
+                                            <img src="assets/images/news-1.jpg" alt="">
+                                        </a>
+                                        <div class="news__item-content">
+                                            <div class="news__item-info d-flex justify-content-between">
+                                                <p class="text-uppercase">Admin</p>
+                                                <p class="info__time">25.02.2021</p>
+                                            </div>
+                                            <a href="single-news.html" class="news__item-title fw-bold">
+                                            Tiêu đề tin tức tiêu đề tin tức
+                                            </a>
+                                            <p class="news__item-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque nihil iste doloribus exercitationem facere quos enim, quod nam impedit.
+                                            </p>
+                                            <a href="single-news.html" class="news__item-link font-italic">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="assets/box/jquery.fancybox.min.js"></script>
+    <script src="assets/carousel/flickity.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
