@@ -67,7 +67,7 @@ function menuMobile() {
 
 // Search Mobile
 function searchMobile() {
-    $('.icon__search-mb').click(function() {
+    $('.icon__search-mb d-block d-lg-none').click(function() {
         $('.search__mobile').addClass('active');
         $('.overlay').addClass('overlay-active');
         $('.search__mobile form input').trigger('focus');
