@@ -1,0 +1,26 @@
+/** BREADCRUMB **/
+
+#breadcrumbs {
+    color: #666666b3;
+    font-size: 16px;
+    a {
+        color: #666666b3;
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+    .breadcrumb_last {
+        color: var(--primary-color);
+    }
+}
+
+.page-banner__title {
+    #breadcrumbs {
+        margin-top: 5px;
+        text-transform: none;
+        color: #fff;
+        a {
+            color: #fff;
+        }
+    }
+}

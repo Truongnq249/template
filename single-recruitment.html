@@ -38,6 +38,7 @@
             </svg>
         </div>
     </div>
+
     <header class="header sticky-top">
         <div class="header__top">
             <div class="container">
@@ -415,267 +416,209 @@
 
     <div class="overlay"></div>
 
-
     <main>
-        <section class="page-banner position-relative">
-            <div class="page-banner__image">
-                <picture>
-                    <source media="(max-width:1023px)" srcset="https://source.unsplash.com/random">
-                    <img src="https://source.unsplash.com/random" alt="">
-                </picture>
-            </div>
-            <div class="page-banner__title text-uppercase text-white  position-relative font-weight-bold">
-                Tin tức
-                <p id="breadcrumbs">
-                    <span>
-                        <span>
-                            <a href="">Trang chủ</a> 
-                                » 
-                            <span class="breadcrumb_last" aria-current="page">Tin tức</span>
-                    </span>
-                    </span>
-                </p>
-                </d>
-        </section>
-        <section class="news__head">
-            <div class="container">
-                <div class="row align-items-end row-gap-15">
-                    <div class="col-lg-9">
-                        <nav class="news__head-list mb-4 mb-lg-0 ">
-                            <div class="news__head-mobile d-block d-lg-none position-relative">
-                                <p>Chuyên mục tin tức</p>
-                            </div>
-                            <div class="list-inner">
-                                <ul class="mb-0">
-                                    <li class="current-menu-item active"><a href="">Tất cả</a></li>
-                                    <li><a href="">Chuyên mục tin tức 2</a></li>
-                                    <li><a href="">Chuyên mục tin tức 3</a></li>
-                                    <li><a href="">Chuyên mục tin tức 4</a></li>
-                                    <li><a href="">Chuyên mục tin tức 5</a></li>
+        <section class="page-header-shadow">
+            <div class="page-header-shadow-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p id="breadcrumbs">
+                                <span>
+                                    <span>
+                                        <a href="">Trang chủ</a> 
+                                        » 
+                                        <a href="">Tuyển dụng</a> 
+                                        » 
+                                        <span class="breadcrumb_last" aria-current="page">Tiêu đề tin tuyển dụng</span>
+                                </span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0">
+                            <div class="page-header-shadow-share d-flex align-items-center justify-content-start justify-content-md-end">
+                                <p>Chia sẻ trang này:</p>
+                                <ul class="d-flex align-items-center ps-4 mb-0 list-unstyled">
+                                    <li>
+                                        <a href="">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.75 0H2.25C1.65326 0 1.08097 0.237053 0.65901 0.65901C0.237053 1.08097 0 1.65326 0 2.25L0 18.75C0 19.3467 0.237053 19.919 0.65901 20.341C1.08097 20.7629 1.65326 21 2.25 21H8.68359V13.8605H5.73047V10.5H8.68359V7.93875C8.68359 5.02547 10.418 3.41625 13.0744 3.41625C14.3466 3.41625 15.6769 3.64313 15.6769 3.64313V6.5025H14.2111C12.7669 6.5025 12.3164 7.39875 12.3164 8.31797V10.5H15.5405L15.0248 13.8605H12.3164V21H18.75C19.3467 21 19.919 20.7629 20.341 20.341C20.7629 19.919 21 19.3467 21 18.75V2.25C21 1.65326 20.7629 1.08097 20.341 0.65901C19.919 0.237053 19.3467 0 18.75 0Z" fill="#0A5B89"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5 0H1.49531C0.670312 0 0 0.679688 0 1.51406V19.4859C0 20.3203 0.670312 21 1.49531 21H19.5C20.325 21 21 20.3203 21 19.4859V1.51406C21 0.679688 20.325 0 19.5 0ZM6.34687 18H3.23438V7.97812H6.35156V18H6.34687ZM4.79062 6.60938C3.79219 6.60938 2.98594 5.79844 2.98594 4.80469C2.98594 3.81094 3.79219 3 4.79062 3C5.78437 3 6.59531 3.81094 6.59531 4.80469C6.59531 5.80312 5.78906 6.60938 4.79062 6.60938V6.60938ZM18.0141 18H14.9016V13.125C14.9016 11.9625 14.8781 10.4672 13.2844 10.4672C11.6625 10.4672 11.4141 11.7328 11.4141 13.0406V18H8.30156V7.97812H11.2875V9.34687H11.3297C11.7469 8.55937 12.7641 7.72969 14.2781 7.72969C17.4281 7.72969 18.0141 9.80625 18.0141 12.5062V18V18Z" fill="black"/>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
-                        </nav>
+                        </div>
                     </div>
-                    <div class="col-lg-3">
-                        <form>
-                            <div class="news__head-form d-flex align-items-center">
-                                <input type="text" placeholder="Nhập từ khoá tìm kiếm">
-                                <button type="submit" class="text-uppercase text-white">Tìm kiếm</button>
-                            </div>
-                        </form>
+                </div>
+            </div>
+            <div class="page-header-shadow-bottom">
+                <div class="container">
+                    <h1 class="page-header-shadow__title">Tiêu đề tin tuyển dụng</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="single-recruitment-head">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <p class="single-recruitment-head__content">Mức lương: Thoả thuận</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="single-recruitment-head__content">Hạn nộp: 31/10/2021</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="single-recruitment-head__content">Địa điểm: Hà Nội</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="single-recruitment-head__content">Số lượng :1</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="news-list">
+        <section class="single-recruitment-main">
             <div class="container">
-                <div class="row g-4 g-md-5">
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-1.webp" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
-                            </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="single-recruitment-content ws-sgct">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia nihil ut voluptatem ipsum molestiae? Fuga eaque unde ex illo at, omnis totam optio ullam iusto tempore quo iste sint quasi veritatis ratione amet libero cumque
+                                aliquid, tenetur adipisci nesciunt labore.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, magni aliquid labore laudantium voluptate quia ipsum repellat repellendus vel sit culpa ea expedita eligendi facere in nisi soluta minima rem tenetur repudiandae
+                                fuga consequuntur dolor quibusdam aspernatur! Ducimus corporis cumque sint odio harum, voluptas velit rerum tempora architecto commodi vel quasi nobis labore blanditiis? Beatae facilis nostrum veritatis perferendis earum
+                                vero, eligendi dolor veniam corporis, iure inventore accusantium dolorum repellendus. Molestias explicabo fuga deleniti expedita repellat rem, nisi commodi totam pariatur voluptates quod temporibus vero odio alias dolorem,
+                                esse et.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia nihil ut voluptatem ipsum molestiae? Fuga eaque unde ex illo at, omnis totam optio ullam iusto tempore quo iste sint quasi veritatis ratione amet libero cumque
+                                aliquid, tenetur adipisci nesciunt labore.</p>
+                            <h2>Title Title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia nihil ut voluptatem ipsum molestiae? Fuga eaque unde ex illo at, omnis totam optio ullam iusto tempore quo iste sint quasi veritatis ratione amet libero cumque
+                                aliquid, tenetur adipisci nesciunt labore.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia nihil ut voluptatem ipsum molestiae? Fuga eaque unde ex illo at, omnis totam optio ullam iusto tempore quo iste sint quasi veritatis ratione amet libero cumque
+                                aliquid, tenetur adipisci nesciunt labore.</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-2.jpg" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
+                    <div class="col-lg-4">
+                        <aside class="single-recruitment-sidebar text-white">
+                            <p class="single-recruitment-sidebar__head fw-bold pb-4 pb-lg-5">Phòng Nhân sự</p>
+                            <div class="single-recruitment-sidebar__content ws-sgct py-4 py-lg-5">
+                                <h2><strong>Ms. Phạm Thúy Nga </strong></h2>
+                                <p>Phone: 0123456789</p>
+                                <p>Email: <a href="">example@gmail.com</a></p>
                             </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="single-recruitment-share d-flex align-items-center py-4">
+                            <p>Chia sẻ:</p>
+                            <ul class="list-unstyled ps-4 d-flex align-items-center mb-0 ">
+                                <li>
+                                    <a href="">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.75 0H2.25C1.65326 0 1.08097 0.237053 0.65901 0.65901C0.237053 1.08097 0 1.65326 0 2.25L0 18.75C0 19.3467 0.237053 19.919 0.65901 20.341C1.08097 20.7629 1.65326 21 2.25 21H8.68359V13.8605H5.73047V10.5H8.68359V7.93875C8.68359 5.02547 10.418 3.41625 13.0744 3.41625C14.3466 3.41625 15.6769 3.64313 15.6769 3.64313V6.5025H14.2111C12.7669 6.5025 12.3164 7.39875 12.3164 8.31797V10.5H15.5405L15.0248 13.8605H12.3164V21H18.75C19.3467 21 19.919 20.7629 20.341 20.341C20.7629 19.919 21 19.3467 21 18.75V2.25C21 1.65326 20.7629 1.08097 20.341 0.65901C19.919 0.237053 19.3467 0 18.75 0Z" fill="#0A5B89"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5 0H1.49531C0.670312 0 0 0.679688 0 1.51406V19.4859C0 20.3203 0.670312 21 1.49531 21H19.5C20.325 21 21 20.3203 21 19.4859V1.51406C21 0.679688 20.325 0 19.5 0ZM6.34687 18H3.23438V7.97812H6.35156V18H6.34687ZM4.79062 6.60938C3.79219 6.60938 2.98594 5.79844 2.98594 4.80469C2.98594 3.81094 3.79219 3 4.79062 3C5.78437 3 6.59531 3.81094 6.59531 4.80469C6.59531 5.80312 5.78906 6.60938 4.79062 6.60938V6.60938ZM18.0141 18H14.9016V13.125C14.9016 11.9625 14.8781 10.4672 13.2844 10.4672C11.6625 10.4672 11.4141 11.7328 11.4141 13.0406V18H8.30156V7.97812H11.2875V9.34687H11.3297C11.7469 8.55937 12.7641 7.72969 14.2781 7.72969C17.4281 7.72969 18.0141 9.80625 18.0141 12.5062V18V18Z" fill="black"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 2.41887C17.3306 2.7125 16.6174 2.90712 15.8737 3.00162C16.6388 2.54487 17.2226 1.82712 17.4971 0.962C16.7839 1.38725 15.9964 1.68763 15.1571 1.85525C14.4799 1.13413 13.5146 0.6875 12.4616 0.6875C10.4186 0.6875 8.77387 2.34575 8.77387 4.37863C8.77387 4.67113 8.79862 4.95237 8.85938 5.22012C5.7915 5.0705 3.07687 3.60013 1.25325 1.36025C0.934875 1.91263 0.748125 2.54488 0.748125 3.2255C0.748125 4.5035 1.40625 5.63637 2.38725 6.29225C1.79437 6.281 1.21275 6.10888 0.72 5.83775C0.72 5.849 0.72 5.86363 0.72 5.87825C0.72 7.6715 1.99912 9.161 3.6765 9.50412C3.37612 9.58625 3.04875 9.62562 2.709 9.62562C2.47275 9.62562 2.23425 9.61213 2.01038 9.56262C2.4885 11.024 3.84525 12.0984 5.4585 12.1332C4.203 13.1154 2.60888 13.7071 0.883125 13.7071C0.5805 13.7071 0.29025 13.6936 0 13.6565C1.63462 14.7106 3.57188 15.3125 5.661 15.3125C12.4515 15.3125 16.164 9.6875 16.164 4.81175C16.164 4.64862 16.1584 4.49113 16.1505 4.33475C16.8829 3.815 17.4982 3.16587 18 2.41887Z" fill="white"/>
+                                            </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-3.webp" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-4.webp" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-3.webp" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-2.jpg" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-1.webp" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-3.webp" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-4">
-                        <div class="news__item">
-                            <a href="single-news.html" class="news__item-image d-block">
-                                <img src="assets/images/news-4.webp" alt="">
-                            </a>
-                            <div class="news__item-content">
-                                <div class="news__item-info d-flex justify-content-between">
-                                    <p class="text-uppercase">admin</p>
-                                    <p class="info__time">25.02.2021</p>
-                                </div>
-                                <a href="single-news.html" class="news__item-title font-weight-bold">
-                                        Tiêu đề tin tức
-                                    </a>
-                                <p class="news__item-desc">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nam consectetur inventore voluptas dignissimos nulla ipsum neque nostrum. Ipsum, possimus.
-                                </p>
-                                <a href="single-news.html" class="news__item-link">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hazo-pagination">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.5 1.5L1.5 6.5L6.5 11.5" stroke="#001A72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="active"><a href="">1</a>
-                        </li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li>
-                            <a href="">
-                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 11L6 6L1 1" stroke="#001A72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>
+
+        <section class="recruitment-list">
+            <div class="container">
+                <h2 class="recruitment-list__title fw-bold mb-4 mb-lg-5">Vị trí đang tuyển dụng</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-12">
+                        <div class="recruitment-item row align-items-center g-0 position-relative">
+                            <div class="col-lg-8">
+                                <p class="recruitment-item__title mb-3">
+                                    <a href="">Tiêu đề tin tuyển dụng</a>
+                                </p>
+                                <p class="recruitment-item__info"> Mức lương: Thoả thuận | Hà Nội</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="recruiment-item__expiration-date">31/10/2021</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#" class="recruitment-item__link">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                        <div class="recruitment-item row align-items-center g-0 position-relative">
+                            <div class="col-lg-8">
+                                <p class="recruitment-item__title mb-3">
+                                    <a href="">Tiêu đề tin tuyển dụng</a>
+                                </p>
+                                <p class="recruitment-item__info"> Mức lương: Thoả thuận | Hà Nội</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="recruiment-item__expiration-date">31/10/2021</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#" class="recruitment-item__link">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                        <div class="recruitment-item row align-items-center g-0 position-relative">
+                            <div class="col-lg-8">
+                                <p class="recruitment-item__title mb-3">
+                                    <a href="">Tiêu đề tin tuyển dụng</a>
+                                </p>
+                                <p class="recruitment-item__info"> Mức lương: Thoả thuận | Hà Nội</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="recruiment-item__expiration-date">31/10/2021</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#" class="recruitment-item__link">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                        <div class="recruitment-item row align-items-center g-0 position-relative">
+                            <div class="col-lg-8">
+                                <p class="recruitment-item__title mb-3">
+                                    <a href="">Tiêu đề tin tuyển dụng</a>
+                                </p>
+                                <p class="recruitment-item__info"> Mức lương: Thoả thuận | Hà Nội</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="recruiment-item__expiration-date">31/10/2021</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#" class="recruitment-item__link">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 

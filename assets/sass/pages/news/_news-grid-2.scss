@@ -1,0 +1,120 @@
+.news-grid2__main {
+    padding: 70px 0;
+    @include breakpoint(1023) {
+        padding: 45px 0;
+    }
+}
+
+.news__item2-big {
+    &-image {
+        padding-bottom: 30%;
+        @include breakpoint(767) {
+            width: 100%;
+            padding-bottom: 66.67%;
+        }
+    }
+    &-content {
+        padding-left: 50px;
+        @include breakpoint(1023) {
+            padding-left: 30px;
+        }
+        @include breakpoint(767) {
+            padding-left: 0;
+            padding-top: 15px;
+        }
+    }
+    &-category {
+        font-size: 15px;
+    }
+    &-title {
+        font-size: 26px;
+        font-weight: 600;
+        @include breakpoint(767) {
+            font-size: 22px;
+        }
+        a {
+            color: #333;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+    &-desc {
+        display: -webkit-box!important;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3 !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &-button {
+        display: inline-block;
+        border: 2px solid var(--primary-color);
+        transition: 0.3s;
+        padding: 10px 35px;
+        color: var(--primary-color);
+        font-weight: 600;
+        &:hover {
+            padding-right: 60px;
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+    }
+}
+
+.news__item2 {
+    height: 100%;
+    &-image {
+        padding-bottom: 66.67%;
+    }
+    &-content {
+        padding-top: 10px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        display: flex;
+        flex-direction: column;
+    }
+    &-title {
+        font-size: 26px;
+        font-weight: 600;
+        @include breakpoint(767) {
+            font-size: 22px;
+        }
+        a {
+            color: #333;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+    &-desc {
+        display: none;
+    }
+    &-link {
+        display: none;
+        color: var(--primary-color);
+        margin-top: auto;
+    }
+    @media(hover) {
+        &:hover &-content {
+            -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+            height: 100%;
+        }
+        &:hover &-title {
+            margin-top: auto;
+        }
+        &:hover &-image {
+            display: none;
+        }
+        &:hover &-desc,
+        &:hover &-link {
+            display: -webkit-box!important;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3 !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

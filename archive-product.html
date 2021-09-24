@@ -16,8 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/carousel/flickity.css">
     <link rel="stylesheet" href="assets/box/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -196,7 +195,8 @@
                         <li class="menu-item-has-children">
                             <a href="">Tin tức</a>
                             <ul>
-                                <li><a href="news-grid.html">Tin tức dạng lưới</a></li>
+                                <li><a href="news-grid.html">Tin tức dạng lưới 1</a></li>
+                                <li><a href="news-grid-2.html">Tin tức dạng lưới 2</a></li>
                                 <li><a href="news-list.html">Tin tức dạng danh sách</a></li>
                             </ul>
                         </li>
@@ -207,7 +207,7 @@
                             <a href="">Sale</a>
                         </li>
                         <li>
-                            <a href="">Hướng dẫn sử dụng</a>
+                            <a href="recruitment.html">Tuyển dụng</a>
                         </li>
                     </ul>
                 </nav>
@@ -297,7 +297,7 @@
                         <a href="">Sale</a>
                     </li>
                     <li>
-                        <a href="">Hướng dẫn sử dụng</a>
+                        <a href="recruitment.html">Tuyển dụng</a>
                     </li>
                     <li>
                         <a href="">Sản phẩm yêu thích (0)</a>
@@ -421,13 +421,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
-                            <p>
-                                <a href="index.php">Trang chủ</a>
-                                <span class="separator"> / </span>
-                                <span class="last">Cửa hàng</span>
-                            </p>
-                        </nav>
+                        <p id="breadcrumbs">
+                            <span>
+                                <span>
+                                    <a href="">Trang chủ</a> 
+                                        » 
+                                    <span class="breadcrumb_last" aria-current="page">Cửa hàng</span>
+                            </span>
+                            </span>
+                        </p>
                         <div class="archive-product__filter-mobile text-uppercase text-center d-block d-lg-none mt-4">
                             <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 3C11 1.89543 10.1046 1 9 1C7.89543 1 7 1.89543 7 3M11 3C11 4.10457 10.1046 5 9 5C7.89543 5 7 4.10457 7 3M11 3H17M7 3L1 3M13 10C13 11.1046 13.8954 12 15 12C16.1046 12 17 11.1046 17 10C17 8.89543 16.1046 8 15 8C13.8954 8 13 8.89543 13 10ZM13 10H1M5 17C5 15.8954 4.10457 15 3 15C1.89543 15 1 15.8954 1 17C1 18.1046 1.89543 19 3 19C4.10457 19 5 18.1046 5 17ZM5 17H17" stroke="#001A72" stroke-width="1.5" stroke-linecap="round"/>
