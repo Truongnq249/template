@@ -1,0 +1,288 @@
+.checkout-page {
+    overflow: hidden;
+}
+
+.checkout-logo {
+    img {
+        max-width: 150px;
+    }
+}
+
+.checkout-info {
+    padding: 28px 0;
+    &__account {
+        &-login,
+        &-logout {
+            color: #333;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+        &-login:before,
+        &-logout:before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            margin-right: 5px;
+        }
+        &-login {
+            &:before {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='user-circle' class='svg-inline--fa fa-user-circle fa-w-16' role='img' viewBox='0 0 496 512'%3E%3Cpath fill='currentColor' d='M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z'/%3E%3C/svg%3E");
+            }
+        }
+        &-logout {
+            &:before {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sign-out-alt' class='svg-inline--fa fa-sign-out-alt fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z'/%3E%3C/svg%3E");
+            }
+        }
+    }
+    &__field {
+        &-group {
+            textarea,
+            input {
+                padding: 15px 10px 2px 10px;
+                font-size: 15px;
+                &:focus {
+                    box-shadow: none;
+                    border-color: #333;
+                }
+            }
+            label.moveUp {
+                transform: translateY(-6px);
+                font-size: 11px;
+            }
+            label {
+                position: absolute;
+                top: 10px;
+                transition: 0.3s;
+                left: 10px;
+                font-size: 14px;
+                color: #989696;
+                pointer-events: none;
+            }
+        }
+    }
+    .checkout-info__field-select2 {
+        .js-select2 {
+            .select2-container {
+                width: 100%!important;
+            }
+        }
+        .select2-container--default .select2-selection--single {
+            height: auto!important;
+            padding: 15px 10px 2px 10px!important;
+            font-size: 15px!important;
+            border-color: #ced4da;
+        }
+        label {
+            transform: translateY(-6px);
+            font-size: 11px;
+        }
+    }
+    &__method {
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        label {
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            position: relative;
+            .checkout-method-input {
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .checkmark {
+                width: 18px;
+                height: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid #ced4da;
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    opacity: 0;
+                    -webkit-transition: .3s ease .2s;
+                    -o-transition: .3s ease .2s;
+                    transition: .3s ease .2s;
+                }
+            }
+            .checkout-method-input:checked~.checkmark {
+                background-color: var(--primary-color);
+                border-color: var(--primary-color);
+            }
+            .checkout-method-input:checked~.checkmark:after {
+                opacity: 1;
+            }
+            .checkout-method-name {
+                margin-left: 5px;
+            }
+            .checkout-method-price {
+                margin-left: auto;
+            }
+        }
+        .checkout-method-noti {
+            width: 100%;
+            padding: 10px;
+            background-color: #f8f8f8;
+            display: none;
+        }
+    }
+}
+
+.checkout-main {
+    @include min-breakpoint(1024) {
+        border-left: 1px solid #ced4da;
+    }
+    @include min-breakpoint(1200) {
+        height: 100vh!important;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 300%;
+        background-color: #fafafa;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &__head {
+        padding: 20px;
+        border-bottom: 1px solid #ced4da;
+        @include breakpoint(1023) {
+            .section__title {
+                &:after {
+                    display: inline-block;
+                    margin-left: 10px;
+                    content: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                }
+            }
+            &.clicked .section__title:after {
+                -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__item {
+        border-bottom: 1px solid #ced4da;
+    }
+    &__product {
+        &-image {
+            width: 50px;
+            height: 50px;
+            flex: 0 0 auto;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-quantity {
+            background-color: #333;
+            min-width: 20px;
+            height: 20px;
+            top: -6px;
+            right: -6px;
+            color: #fff;
+        }
+        &-info {
+            flex: 1;
+            padding-left: 20px;
+            span {
+                color: #989696;
+                font-size: 14px;
+            }
+        }
+        &-price {
+            color: #717171;
+        }
+    }
+    &__voucher {
+        .checkout-info__field-group {
+            flex: 1;
+            margin-right: 10px;
+        }
+        button {
+            padding: 6px 20px;
+            background-color: #717171;
+            color: #fff;
+            border: none;
+            outline: none;
+            line-height: 1;
+            height: 40px;
+            border-radius: 5px;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+            &:hover {
+                background-color: var(--primary-color);
+            }
+        }
+    }
+    &__price {
+        &-item {
+            .item__number {
+                text-align: right;
+            }
+        }
+    }
+    &__bottom {
+        &-link {
+            color: #333;
+            &:before {
+                margin-right: 10px;
+                content: url("data:image/svg+xml,%3Csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 1L1.24808 4.16795C0.654342 4.56377 0.654342 5.43623 1.24808 5.83205L6 9' stroke='%23292D32' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='0.2 0.2'/%3E%3C/svg%3E%0A");
+                -webkit-transition: .3s;
+                -o-transition: .3s;
+                transition: .3s;
+                display: inline-block;
+            }
+            @media(hover) {
+                &:hover {
+                    color: #333;
+                }
+                &:hover:before {
+                    -webkit-transform: translateX(-5px);
+                    -ms-transform: translateX(-5px);
+                    transform: translateX(-5px);
+                }
+            }
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            transition: 0.3s;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            &:hover {
+                background-color: var(--primary-color);
+            }
+        }
+    }
+}
+
+.checkout__total {
+    font-size: 17px;
+    border: none;
+    &-number {
+        font-weight: 600;
+        text-align: right;
+    }
+}

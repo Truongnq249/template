@@ -9,6 +9,15 @@
     }
 }
 
+.archive__title {
+    font-size: 25px;
+    @include breakpoint(767) {
+        font-size: 20px;
+        text-align: center;
+        margin: 20px 0 10px 0;
+    }
+}
+
 .archive-product__sort {
     @media screen and (max-width: 1023px) {
         text-align: center;

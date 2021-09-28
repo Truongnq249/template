@@ -12,6 +12,13 @@
             cartView();
             $('[data-bs-toggle="tooltip"]').tooltip();
             categoryNewsMobile();
+            focusInputAnimation();
+            checkoutAction()
+            if ($(".js-select2").length) {
+                $(".js-select2").select2();
+            }
+            toggleSingleProductContent()
+            productParamModalCarousel()
         });
     };
 })(jQuery);
@@ -67,7 +74,7 @@ function menuMobile() {
 
 // Search Mobile
 function searchMobile() {
-    $('.icon__search-mb d-block d-lg-none').click(function() {
+    $('.icon__search-mb').click(function() {
         $('.search__mobile').addClass('active');
         $('.overlay').addClass('overlay-active');
         $('.search__mobile form input').trigger('focus');
@@ -129,6 +136,10 @@ function resizeFlickity() {
 
     $('.product-quickview-modal').on('shown.bs.modal', function(event) {
         $('.quickview__gallery').flickity('resize');
+    });
+
+    $('.param-modal').on('shown.bs.modal', function(event) {
+        $('.param-modal__carousel .carousel').flickity('resize');
     });
 }
 // Scroll to center nav
@@ -210,4 +221,79 @@ function categoryNewsMobile() {
             $(this).toggleClass('active');
         })
     }
+}
+//Thanh toán
+function focusInputAnimation() {
+    // Animation cho label input
+    $('.input-has-animation input').on('focus', function() {
+        $(this).next('label').addClass('moveUp');
+    })
+
+    $('.input-has-animation input').on('focusout', function() {
+        if (!$(this).val()) $(this).next('label').removeClass('moveUp');
+    })
+    $('.input-has-animation textarea').on('focus', function() {
+        $(this).next('label').addClass('moveUp');
+    })
+
+    $('.input-has-animation textarea').on('focusout', function() {
+        if (!$(this).val()) $(this).next('label').removeClass('moveUp');
+    })
+}
+//Single Product 2
+function checkoutAction() {
+    // Đóng mở thông báo khi chọn radio
+    $('.checkout-info__method label').click(function() {
+            $(this).next('.checkout-method-noti').show();
+        })
+        // Toggle thông tin giỏ hàng trên mobile
+    if ($(window).width() < 1024) {
+        $('.checkout-main__head').click(function() {
+            $(this).toggleClass('clicked');
+            $('.toggle-on-mobile').toggle();
+        })
+    }
+}
+
+//Single Product 2 
+function toggleSingleProductContent() {
+    $('.js--button-overlay').click(function() {
+        $(this).parent().hide();
+        $('.single-product2__body-left').addClass('active');
+    })
+    $('.single-product2__body-left').css('height', $('.single-product2__body-right').height())
+}
+
+// Single product 2
+function productParamModalCarousel() {
+    // external js: flickity.pkgd.js
+
+    var $carousel = $('.param-modal__carousel-main').flickity();
+
+    var $carouselNav = $('.param-modal__carousel-nav');
+    var $carouselNavCells = $carouselNav.find('.carousel-cell');
+
+    $carouselNav.on('click', '.carousel-cell', function(event) {
+        var index = $(event.currentTarget).index();
+        $carousel.flickity('select', index);
+    });
+
+    var flkty = $carousel.data('flickity');
+    var navTop = $carouselNav.position().top;
+    var navCellHeight = $carouselNavCells.height();
+    var navHeight = $carouselNav.height();
+
+    $carousel.on('select.flickity', function() {
+        // set selected nav cell
+        $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
+        var $selected = $carouselNavCells.eq(flkty.selectedIndex)
+            .addClass('is-nav-selected');
+        // scroll nav
+        var scrollY = $selected.position().top +
+            $carouselNav.scrollTop() - (navHeight + navCellHeight) / 2;
+        $carouselNav.animate({
+            scrollTop: scrollY
+        });
+    });
+
 }
