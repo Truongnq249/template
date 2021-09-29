@@ -3202,39 +3202,6 @@ a.text-primary:hover {
       scroll-snap-align: start; } }
 
 /** Param Modal **/
-.param-modal .carousel-cell__image img {
-  width: 80%;
-  height: 80%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-.param-modal__carousel-main .carousel-cell__image {
-  padding-bottom: 70%; }
-  @media only screen and (max-width: 1023px) {
-    .param-modal__carousel-main .carousel-cell__image {
-      padding-bottom: 90%; } }
-.param-modal__carousel-nav {
-  height: 405px;
-  overflow: hidden; }
-  @media only screen and (max-width: 1023px) {
-    .param-modal__carousel-nav {
-      height: 300px; } }
-  @media only screen and (max-width: 767px) {
-    .param-modal__carousel-nav {
-      height: 270px; } }
-  .param-modal__carousel-nav .carousel-cell {
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    width: 90px; }
-    @media only screen and (max-width: 767px) {
-      .param-modal__carousel-nav .carousel-cell {
-        width: 100%; } }
-    .param-modal__carousel-nav .carousel-cell.is-nav-selected {
-      border-color: var(--primary-color); }
 .param-modal__content {
   font-size: 14px;
   color: #99a2aa; }
@@ -3247,27 +3214,16 @@ a.text-primary:hover {
       @media only screen and (max-width: 1023px) {
         .param-modal__content ul li {
           width: 100%; } }
-
-.param-modal__block-title {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 4px 15px;
-  background: #f8f9fa;
-  -webkit-box-shadow: inset 0 -1px 0 0 #e9ecef;
-  box-shadow: inset 0 -1px 0 0 #e9ecef; }
-
-.param-modal__accesory-item .item__icon {
-  width: 50px;
-  height: 50px;
-  flex: 0 0 auto;
-  background: #e9ecef; }
-  .param-modal__accesory-item .item__icon svg {
-    width: 50%;
-    height: 50%; }
-.param-modal__accesory-item .item__content {
-  width: calc(100% - 50px);
-  flex: 0 0 auto;
-  padding-left: 10px; }
+.param-modal table {
+  width: 100%; }
+  .param-modal table tr:nth-child(odd) {
+    background-color: #f3f4f7; }
+  .param-modal table td {
+    border: 1px solid #dee2e6;
+    padding: 6px 10px; }
+    .param-modal table td:nth-child(1) {
+      font-weight: 600;
+      max-width: 200px; }
 
 /** INTRO **/
 .recruitment-intro {

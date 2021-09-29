@@ -18,7 +18,6 @@
                 $(".js-select2").select2();
             }
             toggleSingleProductContent()
-            productParamModalCarousel()
         });
     };
 })(jQuery);
@@ -262,38 +261,4 @@ function toggleSingleProductContent() {
         $('.single-product2__body-left').addClass('active');
     })
     $('.single-product2__body-left').css('height', $('.single-product2__body-right').height())
-}
-
-// Single product 2
-function productParamModalCarousel() {
-    // external js: flickity.pkgd.js
-
-    var $carousel = $('.param-modal__carousel-main').flickity();
-
-    var $carouselNav = $('.param-modal__carousel-nav');
-    var $carouselNavCells = $carouselNav.find('.carousel-cell');
-
-    $carouselNav.on('click', '.carousel-cell', function(event) {
-        var index = $(event.currentTarget).index();
-        $carousel.flickity('select', index);
-    });
-
-    var flkty = $carousel.data('flickity');
-    var navTop = $carouselNav.position().top;
-    var navCellHeight = $carouselNavCells.height();
-    var navHeight = $carouselNav.height();
-
-    $carousel.on('select.flickity', function() {
-        // set selected nav cell
-        $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
-        var $selected = $carouselNavCells.eq(flkty.selectedIndex)
-            .addClass('is-nav-selected');
-        // scroll nav
-        var scrollY = $selected.position().top +
-            $carouselNav.scrollTop() - (navHeight + navCellHeight) / 2;
-        $carouselNav.animate({
-            scrollTop: scrollY
-        });
-    });
-
 }
