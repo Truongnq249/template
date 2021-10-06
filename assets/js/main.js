@@ -18,6 +18,7 @@
                 $(".js-select2").select2();
             }
             toggleSingleProductContent()
+            productFilterSelect2()
         });
     };
 })(jQuery);
@@ -179,13 +180,20 @@ function productSidebar() {
         $(this).next('ul').slideToggle();
     });
 
-    $('.archive-product__filter-mobile').click(function() {
+    $('.js-filter-button-1').click(function() {
         $('.product__sidebar').addClass('active');
         $('.overlay').addClass('overlay-active');
     })
     $('.product__sidebar-close').click(function() {
         $('.product__sidebar').removeClass('active');
         $('.overlay').removeClass('overlay-active');
+    })
+}
+
+// Product filter select 2 toggle
+function productFilterSelect2() {
+    $('.js-filter-button-2').click(function() {
+        $('.archive-product__filter-select2').slideToggle(500);
     })
 }
 

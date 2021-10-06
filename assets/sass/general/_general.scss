@@ -279,6 +279,16 @@ a.text-primary:hover {
 }
 
 
+/** GRID **/
+
+@include min-breakpoint(1024) {
+    .col-lg-20p {
+        width: 20%;
+        flex: 0 0 auto;
+    }
+}
+
+
 /** Infinite loader **/
 
 .page-load-status {
