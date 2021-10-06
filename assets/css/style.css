@@ -1972,7 +1972,8 @@ a.text-primary:hover {
   .archive-product__filter-select2 {
     display: none; } }
 .archive-product__filter-select2 select {
-  opacity: 0; }
+  opacity: 0;
+  height: 36px; }
 .archive-product__filter-select2 .select2-container {
   width: 100% !important; }
 .archive-product__filter-select2 .select2-container .select2-selection--single {
