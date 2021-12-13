@@ -38,12 +38,13 @@
             </svg>
         </div>
     </div>
+
     <header class="header sticky-top">
         <div class="header__top">
             <div class="container">
                 <div class="header__top-inner">
-                    <div class="row align-items-center">
-                        <div class="col-lg-2 d-flex align-items-center d-lg-block justify-content-between">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-3 d-flex align-items-center d-lg-block justify-content-between">
                             <div class="header__bars d-block d-lg-none">
                                 <svg height="21px" viewBox="0 -53 384 384" width="21px" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path></svg>
                             </div>
@@ -69,7 +70,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-6 mt-3 mt-lg-0 d-none d-lg-block">
+                        <div class="col-xl-5 col-lg-5 mt-3 mt-lg-0 d-none d-lg-block">
                             <form action="" class="header__search d-flex flex-wrap align-items-center">
                                 <input type="text" class="form-control" placeholder="Bạn cần tìm gì?" autocomplete="off">
                                 <button type="submit" aria-label="Tìm kiếm">
@@ -462,7 +463,7 @@
         <section class="archive-product__main mt-5">
             <div class="container">
                 <div class="row gx-5">
-                    <div class="col-lg-3">
+                    <div class="col-lg-20p">
                         <aside class="product__sidebar">
                             <div class="product__sidebar-close position-absolute d-flex align-items-center justify-content-center d-lg-none">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -552,9 +553,9 @@
                         </aside>
 
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-80p">
                         <div class="row g-4 g-md-5">
-                            <div class="col-6 col-md-4">
+                            <div class="col-6 col-md-4 col-xl-3">
                                 <div class="product__item">
                                     <div class="product__item-thumb">
                                         <a href="single-product.html" class="product__item-image d-block">
@@ -577,7 +578,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4">
+                            <div class="col-6 col-md-4 col-xl-3">
                                 <div class="product__item">
                                     <div class="product__item-thumb">
                                         <a href="single-product.html" class="product__item-image d-block">
@@ -603,7 +604,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4">
+                            <div class="col-6 col-md-4 col-xl-3">
                                 <div class="product__item">
                                     <div class="product__item-thumb">
                                         <a href="single-product.html" class="product__item-image d-block">
@@ -613,9 +614,7 @@
                                         <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
                                             Xem nhanh
                                         </div>
-                                        <div class="product__item-sale d-flex align-items-center justify-content-center rounded-circle">
-                                            Sale!
-                                        </div>
+                                        <span class="home-product__item-discount d-inline-block">-33%</span>
                                     </div>
                                     <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
                                     <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
@@ -629,30 +628,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4">
-                                <div class="product__item">
-                                    <div class="product__item-thumb">
-                                        <a href="single-product.html" class="product__item-image d-block">
-                                            <img src="assets/images/hd-front.jpg" alt="">
-                                            <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
-                                        </a>
-                                        <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
-                                            Xem nhanh
-                                        </div>
-                                    </div>
-                                    <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
-                                    <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
-                                    <span class="price">
-                                        <del>
-                                            <span> 1.500.000đ </span>
-                                    </del>
-                                    <ins>
-                                            <span>1.000.000đ</span>
-                                        </ins>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
+                            <div class="col-6 col-md-4 col-xl-3">
                                 <div class="product__item">
                                     <div class="product__item-thumb">
                                         <a href="single-product.html" class="product__item-image d-block">
@@ -675,7 +651,30 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4">
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="product__item">
+                                    <div class="product__item-thumb">
+                                        <a href="single-product.html" class="product__item-image d-block">
+                                            <img src="assets/images/hd-front.jpg" alt="">
+                                            <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                        </a>
+                                        <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                            Xem nhanh
+                                        </div>
+                                    </div>
+                                    <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                                    <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                                    <span class="price">
+                                        <del>
+                                            <span> 1.500.000đ </span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3">
                                 <div class="product__item">
                                     <div class="product__item-thumb">
                                         <a href="single-product.html" class="product__item-image d-block">

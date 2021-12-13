@@ -84,14 +84,22 @@
         border: 1px solid #e6e6e6;
         top: 50%;
         @media screen and (max-width: 1023px) {
-            width: 40px;
-            height: 40px;
+            width: 33px;
+            height: 33px;
         }
         &.next {
             right: 15px;
         }
         &.previous {
             left: 15px;
+        }
+        @media screen and (max-width:767px) {
+            &.next {
+                right: 10px!important;
+            }
+            &.previous {
+                left: 10px!important;
+            }
         }
         &-icon {
             width: 32%;
@@ -180,6 +188,11 @@
         padding: 3px 8px;
         background-color: #ffa400;
         color: #fff;
+        z-index: 999;
+        @media screen and (max-width: 767px) {
+            top: 10px;
+            font-size: 11px;
+        }
     }
     &-name {
         font-size: 17px;

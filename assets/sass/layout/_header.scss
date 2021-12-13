@@ -289,6 +289,9 @@
                 visibility: visible;
             }
         }
+        .current-menu-item>a {
+            color: var(--primary-color);
+        }
         .menu-item-has-children>a {
             display: flex;
             align-items: center;
