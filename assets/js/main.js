@@ -19,6 +19,7 @@
             }
             toggleSingleProductContent()
             productFilterSelect2()
+            projectNavTogle();
         });
     };
 })(jQuery);
@@ -280,4 +281,8 @@ function toggleSingleProductContent() {
         }, 500);
     })
     $('.single-product2__body-left').css('height', $('.single-product2__body-right').height())
+}
+
+function projectNavTogle() {
+
 }

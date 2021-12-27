@@ -126,6 +126,34 @@
 }
 
 
+/** SECTION GENERAL **/
+
+.section__title-big {
+    font-size: 32px;
+    @media only screen and (max-width: 1023px) {
+        font-size: 25px;
+    }
+    @media only screen and (max-width: 767px) {
+        font-size: 20px;
+    }
+}
+
+.section__title-has-line-short {
+    &:before {
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 90px;
+        height: 1px;
+        background: #ccc;
+        margin-right: 5px;
+        @media only screen and (max-width: 1023px) {
+            width: 70px;
+        }
+    }
+}
+
+
 /** GENERAL **/
 
 .mx--15 {

@@ -106,3 +106,34 @@
 .sidebar__item-right .right-info a:hover {
     color: var(--primary-color);
 }
+
+
+/** PROJECT SIDEBAR **/
+
+.project-sidebar {
+    &__title {
+        color: #70747c;
+        border: 1px solid #dbdbdb;
+        padding: 12px 15px 10px 15px;
+    }
+    &__item {
+        margin-bottom: 20px;
+        span {
+            color: #bababa;
+            font-weight: 300;
+            margin-top: 5px;
+            display: inline-block;
+        }
+        p {
+            margin-top: 5px;
+            font-size: 16px;
+            a {
+                color: #333;
+                font-weight: 500;
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
