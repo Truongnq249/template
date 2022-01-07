@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Danh mục sản phẩm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/carousel/flickity.css">
+    <link rel="stylesheet" href="assets/box/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="search__mobile d-flex align-items-center">
+        <form action="" class="header__search d-flex flex-wrap align-items-center">
+            <input type="text" class="form-control" placeholder="Bạn cần tìm gì?" autocomplete="off">
+            <button type="submit" aria-label="Tìm kiếm">
+                <svg width="20" class="Icon Icon--search-desktop" viewBox="0 0 21 21">
+                    <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                        <path d="M18 18l-5.7096-5.7096"></path>
+                        <circle cx="7.2" cy="7.2" r="7.2"></circle>
+                    </g>
+                </svg>
+            </button>
+        </form>
+        <div class="search__mobile-close d-flex align-items-center justify-content-center">
+            <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+            </svg>
+        </div>
+    </div>
+
+    <header class="header sticky-top">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-3 d-flex align-items-center d-lg-block justify-content-between">
+                            <div class="header__bars d-block d-lg-none">
+                                <svg height="21px" viewBox="0 -53 384 384" width="21px" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"></path></svg>
+                            </div>
+                            <div class="header__logo">
+                                <a href="index.html">
+                                    <img width="180" height="42" src="assets/images/logo.png">
+                                </a>
+                            </div>
+                            <div class="header__action-mobile d-flex">
+                                <div class="icon__search-mb d-block d-lg-none me-3">
+                                    <svg width="20" height="20" class="Icon Icon--search-desktop" viewBox="0 0 21 21">
+                                        <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                            <path d="M18 18l-5.7096-5.7096"></path>
+                                            <circle cx="7.2" cy="7.2" r="7.2"></circle>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <a href="javascript:void(0)" class="d-block d-lg-none header__cart-mb open-cart-qv position-relative" title="Giỏ hàng">
+                                    <svg width="21px" height="21px" viewBox="0 0 19 23">
+                                        <path d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z" fill="#222"></path>
+                                    </svg>
+                                    <span class="d-flex align-items-center justify-content-center rounded-circle position-absolute">0</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 mt-3 mt-lg-0 d-none d-lg-block">
+                            <form action="" class="header__search d-flex flex-wrap align-items-center">
+                                <input type="text" class="form-control" placeholder="Bạn cần tìm gì?" autocomplete="off">
+                                <button type="submit" aria-label="Tìm kiếm">
+                                    <svg class="Icon Icon--search-desktop" viewBox="0 0 21 21">
+                                        <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                            <path d="M18 18l-5.7096-5.7096"></path>
+                                            <circle cx="7.2" cy="7.2" r="7.2"></circle>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 d-none d-lg-flex justify-content-end">
+                            <div class="header__account-wrapper position-relative d-flex align-items-center">
+                                <a href="" class="header__account" aria-label="Tài khoản" title="Tài khoản">
+                                    <svg viewBox="0 0 512 512"><path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" data-original="#222222" class="active-path" fill="#222222"></path></svg>
+                                    <span class="acc-text">Tài khoản</span>
+                                </a>
+                                <ul class="header__account-sub position-absolute">
+                                    <li><a rel="nofollow" href="" title="Đăng nhập">Đăng nhập</a></li>
+                                    <li><a rel="nofollow" href="" title="Đăng ký">Đăng ký</a></li>
+                                    <li>
+                                        <a href="" aria-label="Sản phẩm Yêu thích" title="Sản phẩm Yêu thích">Yêu thích <span class="header__wishlish-count d-inline-block rounded-circle">0</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="javascript:void(0)" class="header__cart open-cart-qv d-inline-block position-relative" aria-label="Xem giỏ hàng" title="Giỏ hàng">
+                                <svg viewBox="0 0 512 512"><g><path xmlns="http://www.w3.org/2000/svg" d="m504.399 185.065c-6.761-8.482-16.904-13.348-27.83-13.348h-98.604l-53.469-122.433c-3.315-7.591-12.157-11.06-19.749-7.743-7.592 3.315-11.059 12.158-7.743 19.75l48.225 110.427h-178.458l48.225-110.427c3.315-7.592-.151-16.434-7.743-19.75-7.591-3.317-16.434.15-19.749 7.743l-53.469 122.434h-98.604c-10.926 0-21.069 4.865-27.83 13.348-6.637 8.328-9.086 19.034-6.719 29.376l52.657 230c3.677 16.06 17.884 27.276 34.549 27.276h335.824c16.665 0 30.872-11.216 34.549-27.276l52.657-230.001c2.367-10.342-.082-21.048-6.719-29.376zm-80.487 256.652h-335.824c-2.547 0-4.778-1.67-5.305-3.972l-52.657-229.998c-.413-1.805.28-3.163.936-3.984.608-.764 1.985-2.045 4.369-2.045h85.503l-3.929 8.997c-3.315 7.592.151 16.434 7.743 19.75 1.954.854 3.99 1.258 5.995 1.258 5.782 0 11.292-3.363 13.754-9l9.173-21.003h204.662l9.173 21.003c2.462 5.638 7.972 9 13.754 9 2.004 0 4.041-.404 5.995-1.258 7.592-3.315 11.059-12.158 7.743-19.75l-3.929-8.997h85.503c2.384 0 3.761 1.281 4.369 2.045.655.822 1.349 2.18.936 3.983l-52.657 230c-.528 2.301-2.76 3.971-5.307 3.971z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m166 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.715-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m256 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path><path xmlns="http://www.w3.org/2000/svg" d="m346 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c-.001-8.284-6.716-15-15-15z" fill="#ffffff" data-original="#000000" style=""></path></g></svg>
+                                <span class="acc-text">Giỏ hàng</span>
+                                <span class="header__cart-count position-absolute rounded-circle">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom d-none d-lg-block">
+            <div class="container">
+                <nav class="header__menu">
+                    <ul>
+                        <li class="current-menu-item">
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="">
+                            <a href="">Giới thiệu</a>
+                        </li>
+                        <li class="hazo-mega-menu menu-item-has-children">
+                            <a href="archive-product.html">Sản phẩm</a>
+                            <ul>
+                                <div class="container">
+                                    <div class="row">
+                                        <li class="col-2 px-3">
+                                            <a href="archive-product.html">
+                                                <img src="assets/images/mega-1-image-1.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="col-6 px-3">
+                                            <ul>
+                                                <li>
+                                                    <a href="archive-product.html">Áo</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Croptop</a></li>
+                                                        <li><a href="archive-product.html">Bẹt vai</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Đầm</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Chữ A</a></li>
+                                                        <li><a href="archive-product.html">Sơ Mi</a></li>
+                                                        <li><a href="archive-product.html">Đầm thun</a></li>
+                                                        <li><a href="archive-product.html">Xuông</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Váy</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Váy chữ A</a></li>
+                                                        <li><a href="archive-product.html">Bẹt vai</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Jumpsuit</a>
+                                                    <ul>
+                                                        <li><a href="archive-product.html">Quần dài</a></li>
+                                                        <li><a href="archive-product.html">Quần shorts</a></li>
+                                                        <li><a href="archive-product.html">Sơ mi</a></li>
+                                                        <li><a href="archive-product.html">Áo khoác</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="">Sale</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-4 px-3 hazo-mega-menu__right">
+                                            <ul>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-4.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-1.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="archive-product.html">
+                                                        <img src="assets/images/mega-1-image-4.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">Tin tức</a>
+                            <ul>
+                                <li><a href="news-grid.html">Tin tức dạng lưới 1</a></li>
+                                <li><a href="news-grid-2.html">Tin tức dạng lưới 2</a></li>
+                                <li><a href="news-list.html">Tin tức dạng danh sách</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="">Sale</a>
+                        </li>
+                        <li>
+                            <a href="recruitment.html">Tuyển dụng</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-mobile">
+        <div class="menu-mobile-inner">
+            <div class="menu-mobile-account d-flex align-items-center position-relative">
+                <div class="menu-mobile-close position-absolute d-flex align-items-center justify-content-center">
+                    <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                        <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="menu-mobile-account__avatar d-flex align-items-center justify-content-center">
+                    <svg viewBox="0 0 512 512"><path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z" data-original="#222222" class="active-path" fill="#222222"></path></svg>
+                </div>
+                <ul class="list-unstyled d-flex align-items-center mb-0 justify-content-evenly">
+                    <li>
+                        <a href="">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current-menu-item">
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li class="">
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="">Sản phẩm</a>
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="">Áo</a>
+                                <ul>
+                                    <li><a href="">Croptop</a></li>
+                                    <li><a href="">Bẹt vai</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Đầm</a>
+                                <ul>
+                                    <li><a href="">Chữ A</a></li>
+                                    <li><a href="">Sơ Mi</a></li>
+                                    <li><a href="">Đầm thun</a></li>
+                                    <li><a href="">Xuông</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Váy</a>
+                                <ul>
+                                    <li><a href="">Váy chữ A</a></li>
+                                    <li><a href="">Bẹt vai</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Jumpsuit</a>
+                                <ul>
+                                    <li><a href="">Quần dài</a></li>
+                                    <li><a href="">Quần shorts</a></li>
+                                    <li><a href="">Sơ mi</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li class="menu-item-has-children">
+                            <li>
+                                <a href="">Sale</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="">Sale</a>
+                    </li>
+                    <li>
+                        <a href="recruitment.html">Tuyển dụng</a>
+                    </li>
+                    <li>
+                        <a href="">Sản phẩm yêu thích (0)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="cart-quickview">
+        <div class="cart-quickview-inner">
+            <div class="cart-quickview__head d-flex justify-content-between">
+                <p>Giỏ hàng</p>
+                <span class="cart-quickview__close">
+                    <svg width="15" height="15" class="Icon Icon--close" viewBox="0 0 16 14">
+                        <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="cart-quickview__body">
+                <!-- <div class="cart-quickview-empty d-flex flex-column align-items-center justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px"><g><g id="mobile-screen-shop-store-package"><rect x="23" y="56" width="4" height="2" rx="1" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M30,35H20a3,3,0,1,0,3,3,2.966,2.966,0,0,0-.184-1h4.368A2.966,2.966,0,0,0,27,38a3,3,0,1,0,3-3Zm-9,3a1,1,0,1,1-1-1A1,1,0,0,1,21,38Zm9,1a1,1,0,1,1,1-1A1,1,0,0,1,30,39Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M58.99,41.9A1,1,0,0,0,58,41H55V39a5,5,0,0,0-10,0v2H44V16.86A4,4,0,0,0,47,13a1,1,0,0,0-.11-.45L44,6.76V5a3.009,3.009,0,0,0-3-3H9A3.009,3.009,0,0,0,6,5V6.76L3.11,12.55A1,1,0,0,0,3,13a4,4,0,0,0,3,3.86V59a3.009,3.009,0,0,0,3,3H60a1,1,0,0,0,.74-.33.99.99,0,0,0,.25-.77ZM47,39a3,3,0,0,1,6,0v2H47ZM44.99,13.21A2,2,0,0,1,41,13V8h1.38ZM8,5A1,1,0,0,1,9,4H41a1,1,0,0,1,1,1V6H8ZM39,8v5a2,2,0,0,1-4,0V8ZM33,8v5a2,2,0,0,1-4,0V8ZM27,8v5a2,2,0,0,1-4,0V8ZM21,8v5a2,2,0,0,1-4,0V8ZM15,8v5a2,2,0,0,1-4,0V8ZM5.01,13.21,7.62,8H9v5a2,2,0,0,1-3.99.21ZM31,60H9a1,1,0,0,1-1-1V54H31Zm8.1,0H33V51h7.05Zm1.16-11H33V48h7.36Zm.31-3H32a1,1,0,0,0-1,1v5H8V16.86a4.054,4.054,0,0,0,2-1.24,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,3.951,3.951,0,0,0,6,0,4.054,4.054,0,0,0,2,1.24V41a1,1,0,0,0-.99.9Zm.54,14L42.9,43H45v3h2V43h6v3h2V43h2.1l1.79,17Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/><path d="M33.75,24.34A.981.981,0,0,0,33,24H20V21a1,1,0,0,0-1-1H15v2h3V33a1,1,0,0,0,1,1H32a1,1,0,0,0,.99-.88l1-8A.968.968,0,0,0,33.75,24.34ZM31.12,32H20V26H31.87Z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#E5E5E5"/></g></g> </svg>
+                    <a class="cart-quickview-empty__button" href="">Tiếp tục mua hàng</a>
+                </div> -->
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-quickview__item d-flex flex-wrap">
+                    <a href="" class="item__image">
+                        <img src="assets/images/prod.jpg" alt="">
+                    </a>
+                    <div class="item__info">
+                        <p class="item__info-name">
+                            <a href="">Đầm thun rút vòng tròn eo - Xanh / S</a>
+                        </p>
+                        <div class="item__info-bottom d-flex align-items-center flex-wrap">
+                            <div class="quantity d-flex align-items-center flex-wrap">
+                                <button type="button" class="minus">-</button>
+                                <div class="qty">
+                                    <input type="number" id="" value="1" min="1" max="100000">
+                                </div>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <div class="item__info-price">
+                                <span class="price">
+                                    550.000đ
+                                </span>
+                                <a href="javascript:void(0)" class="item-remove">Bỏ sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-quickview__footer">
+                <div class="cart-quickview__footer-price d-flex justify-content-between mb-4">
+                    <p>Tổng tiền</p>
+                    <span class="price">
+                        948.000₫
+                    </span>
+                </div>
+                <button type="submit">
+                    Thanh toán
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+
+    <main>
+        <section class="archive-product__head">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <p id="breadcrumbs">
+                            <span>
+                                <span>
+                                    <a href="">Trang chủ</a> 
+                                        » 
+                                    <span class="breadcrumb_last" aria-current="page">Cửa hàng</span>
+                            </span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="archive-product__filter-mobile js-filter-button-1 text-uppercase text-center d-block d-lg-none mt-4">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 3C11 1.89543 10.1046 1 9 1C7.89543 1 7 1.89543 7 3M11 3C11 4.10457 10.1046 5 9 5C7.89543 5 7 4.10457 7 3M11 3H17M7 3L1 3M13 10C13 11.1046 13.8954 12 15 12C16.1046 12 17 11.1046 17 10C17 8.89543 16.1046 8 15 8C13.8954 8 13 8.89543 13 10ZM13 10H1M5 17C5 15.8954 4.10457 15 3 15C1.89543 15 1 15.8954 1 17C1 18.1046 1.89543 19 3 19C4.10457 19 5 18.1046 5 17ZM5 17H17" stroke="#001A72" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg> Lọc sản phẩm
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h1 class="archive__title">Tiêu đề danh mục</h1>
+                    </div>
+                    <div class="col-lg-5 mt-4 mt-lg-0">
+                        <div class="archive-product__sort d-flex align-items-center flex-wrap justify-content-center justify-content-lg-end">
+                            <p class="d-none d-lg-block">Hiển thị 12 kết quả</p>
+                            <form action="">
+                                <select name="" id="">
+                                    <option value="">Mặc định</option>
+                                    <option value="">Sắp xếp theo độ phổ biến</option>
+                                    <option value="">Sắp xếp theo đánh giá</option>
+                                    <option value="">Sắp xếp theo sản phẩm mới nhất</option>
+                                    <option value="">Sắp xếp theo giá: Từ thấp đến cao</option>
+                                    <option value="">Sắp xếp theo giá: Từ cao đến thấp</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="archive-product__main mt-5">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-20p">
+                        <aside class="product__sidebar">
+                            <div class="product__sidebar-close position-absolute d-flex align-items-center justify-content-center d-lg-none">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9996 12.9996L1 1" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.9998 1.00037L1.00011 13" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </div>
+                            <div class="product-sidebar__item-input">
+                                <p class="product-sidebar__item-title">THƯƠNG HIỆU</p>
+                                <ul>
+                                    <li class="current-cat"><a href="">Thương hiệu 1</a></li>
+                                    <li><a href="">Thương hiệu 2</a></li>
+                                    <li><a href="">Thương hiệu 3</a></li>
+                                    <li><a href="">Thương hiệu 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="product-sidebar__item-input">
+                                <p class="product-sidebar__item-title">MỨC GIÁ</p>
+                                <ul>
+                                    <li><a href="">Giá dưới 100.000đ</a></li>
+                                    <li><a href="">100.000đ - 200.000đ</a></li>
+                                    <li><a href="">200.000đ - 300.000đ</a></li>
+                                    <li><a href="">300.000đ - 500.000đ</a></li>
+                                    <li><a href="">300.000đ - 500.000đ</a></li>
+                                    <li><a href="">500.000đ - 1.000.000đ</a></li>
+                                    <li><a href="">Giá trên 1.000.000đ</a></li>
+                                </ul>
+                            </div>
+                            <div class="product-sidebar__item-input">
+                                <p class="product-sidebar__item-title">LOẠI</p>
+                                <ul>
+                                    <li><a href="">Loại 1</a></li>
+                                    <li><a href="">Loại 2</a></li>
+                                    <li><a href="">Loại 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="product-sidebar__item-input">
+                                <p class="product-sidebar__item-title">DỊCH VỤ GIAO HÀNG</p>
+                                <ul>
+                                    <li><a href="">Miễn phí giao hàng</a></li>
+                                    <li><a href="">Giao hàng nhanh 4h</a></li>
+                                    <li><a href="">Giao hàng tiết kiệm</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                    </div>
+                    <div class="col-lg-80p">
+                        <div class="row g-4 g-md-5">
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="product__item">
+                                    <div class="product__item-thumb">
+                                        <a href="single-product.html" class="product__item-image d-block">
+                                            <img src="assets/images/hd-front.jpg" alt="">
+                                            <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                        </a>
+                                        <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                            Xem nhanh
+                                        </div>
+                                    </div>
+                                    <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                                    <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                                    <span class="price">
+                                        <del>
+                                            <span> 1.500.000đ </span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="product__item">
+                                    <div class="product__item-thumb">
+                                        <a href="single-product.html" class="product__item-image d-block">
+                                            <img src="assets/images/hd-front.jpg" alt="">
+                                            <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                        </a>
+                                        <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                            Xem nhanh
+                                        </div>
+                                        <div class="product__item-soldout text-uppercase">
+                                            Hết hàng
+                                        </div>
+                                    </div>
+                                    <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                                    <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                                    <span class="price">
+                                        <del>
+                                            <span> 1.500.000đ </span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="product__item">
+                                    <div class="product__item-thumb">
+                                        <a href="single-product.html" class="product__item-image d-block">
+                                            <img src="assets/images/hd-front.jpg" alt="">
+                                            <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                        </a>
+                                        <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                            Xem nhanh
+                                        </div>
+                                        <span class="home-product__item-discount d-inline-block">-33%</span>
+                                    </div>
+                                    <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                                    <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                                    <span class="price">
+                                        <del>
+                                            <span> 1.500.000đ </span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="product__item">
+                                    <div class="product__item-thumb">
+                                        <a href="single-product.html" class="product__item-image d-block">
+                                            <img src="assets/images/hd-front.jpg" alt="">
+                                            <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                        </a>
+                                        <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                            Xem nhanh
+                                        </div>
+                                    </div>
+                                    <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                                    <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                                    <span class="price">
+                                        <del>
+                                            <span> 1.500.000đ </span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="product__item">
+                                    <div class="product__item-thumb">
+                                        <a href="single-product.html" class="product__item-image d-block">
+                                            <img src="assets/images/hd-front.jpg" alt="">
+                                            <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                        </a>
+                                        <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                            Xem nhanh
+                                        </div>
+                                    </div>
+                                    <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                                    <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                                    <span class="price">
+                                        <del>
+                                            <span> 1.500.000đ </span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="product__item">
+                                    <div class="product__item-thumb">
+                                        <a href="single-product.html" class="product__item-image d-block">
+                                            <img src="assets/images/hd-front.jpg" alt="">
+                                            <img src="assets/images/hd-back.jpg" alt="" class="img-hover">
+                                        </a>
+                                        <div class="product__item-quickview text-uppercase" data-bs-toggle="modal" data-bs-target="#product-quickview-modal">
+                                            Xem nhanh
+                                        </div>
+                                    </div>
+                                    <p class="product__item-category text-uppercase">Danh mục sản phẩm</p>
+                                    <p class="product__item-name"><a href="single-product.html">Tên sản phẩm</a></p>
+                                    <span class="price">
+                                        <del>
+                                            <span> 1.500.000đ </span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="archive-product__desc ws-sgct mt-5">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="archive-product__bottom mt-5 pt-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="archive-product__bottom-item">
+                            <p class="product-title-has-line"> Sản phẩm mới nhất </p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-1.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <ins>
+                                                <span>800.000đ</span>
+                                    </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-2.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-3.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-4.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="archive-product__bottom-item">
+                            <p class="product-title-has-line"> Bán chạy mới nhất </p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-5.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-6.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-7.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-8.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="archive-product__bottom-item">
+                            <p class="product-title-has-line"> Sản phẩm nổi bật </p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-9.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <ins>
+                                                <span>800.000đ</span>
+                                    </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-10.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-11.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-1.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="archive-product__bottom-item">
+                            <p class="product-title-has-line">Được đánh giá cao nhất</p>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-2.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-3.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-4.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__item-small d-flex flex-wrap">
+                                <a href="single-product.html" class="item__image">
+                                    <img src="assets/images/prod-5.jpg" alt="">
+                                </a>
+                                <div class="item__info">
+                                    <p class="item__info-name">
+                                        <a href="single-product.html">Tên sản phẩm</a>
+                                    </p>
+                                    <span class="price">
+                                        <del>
+                                            <span>1.500.000đ</span>
+                                    </del>
+                                    <ins>
+                                            <span>1.000.000đ</span>
+                                        </ins>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade product-quickview-modal" id="product-quickview-modal" tabindex="-1" aria-labelledby="product-quickview-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-6">
+                            <div class="quickview__gallery" data-flickity='{ "cellAlign": "left", "contain": true,"imagesLoaded": true,"autoPlay": 2500}'>
+                                <div class="carousel-cell w-100">
+                                    <img src="assets/images/hd-front.jpg" alt="">
+                                </div>
+                                <div class="carousel-cell w-100">
+                                    <img src="assets/images/hd-back.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="quickview__content">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <p class="quickview__content-name">
+                                    <a href="">Tên sản phẩm</a>
+                                </p>
+                                <span class="price">
+                                    <del>
+                                        <span>1.500.000đ</span>
+                                </del>
+                                <ins>
+                                        <span>1.000.000đ</span>
+                                    </ins>
+                                </span>
+                                <div class="quickview__content-desc">
+                                    <p>
+                                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+                                        placerat eleifend leo.
+                                    </p>
+                                </div>
+                                <div class="quickview__content-action">
+                                    <form action="">
+                                        <div class="quantity d-flex flex-wrap">
+                                            <button type="button" class="minus">-</button>
+                                            <div class="qty">
+                                                <input type="number" id="" value="1" min="1" max="100000">
+                                            </div>
+                                            <button type="button" class="plus">+</button>
+                                        </div>
+                                        <button class="action-submit" type="submit">Thêm vào giỏ hàng</button>
+                                    </form>
+                                </div>
+                                <div class="quickview__content-category d-flex align-items-center">
+                                    Danh mục sản phẩm:
+                                    <ul>
+                                        <li><a href="">Danh mục 1</a></li>
+                                        <li><a href="">Danh mục 2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="assets/box/jquery.fancybox.min.js"></script>
+    <script src="assets/carousel/flickity.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
